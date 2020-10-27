@@ -53,11 +53,11 @@
             = button_tag type: 'submit', class: 'button button-primary button-large', style: 'margin-bottom: 0px' do
 
               - if defined?(multiple) && multiple
-                = icon('plus')
+                = icon_spina('plus')
                 = t('spina.images.choose_images')
                 %span.gallery-select-counter{data: {target: "gallery-select.counter"}}
                   - if params[:selected_ids].try(:any?)
                     (#{ params[:selected_ids].count })
               - else
-                = icon('check')
+                = icon_spina('check')
                 =t 'spina.images.choose_image'

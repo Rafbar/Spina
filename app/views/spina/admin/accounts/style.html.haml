@@ -6,7 +6,7 @@
         - if Spina.config.locales.size > 1
           %div{style: "display: inline-block", data: {dropdown: true}}
             = link_to '#', class: 'button button-default button-small', style: 'margin-left: 0; margin-right: 0', data: {trigger: 'dropdown', target: '#locales'} do
-              = icon('comment')
+              = icon_spina('comment')
               =t "spina.languages.#{@locale}"
               %i.icon.icon-chevron-down{style: 'font-size: 9px; margin-right: 0'}
 
@@ -17,7 +17,7 @@
 
     #header_actions
       %button.button.button-primary{type: 'submit', data: {icon: 'o'}}
-        = icon('check')
+        = icon_spina('check')
         = t('spina.preferences.style_save')
 
   .page-form

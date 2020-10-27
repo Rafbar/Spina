@@ -2,14 +2,14 @@
   .modal.modal-large{data: {target: "infinite-scroll.scrollContainer"}}
     %header
       = button_tag type: :default, class: 'modal-close-cross', data: {action: "modal#close"} do
-        = icon('cross')
+        = icon_spina('times')
       - if @mode == "multiple"
         %h3=t "spina.images.choose_images"
       - else
         %h3=t "spina.images.choose_image"
     %section.media-picker
       = hidden_field_tag :input, params[:input], data: {target: "media-picker.input"}
-  
+
       %div{data: {target: "media-picker.grid"}}
         = render 'media_picker_grid'
 

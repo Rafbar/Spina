@@ -1,12 +1,12 @@
 - if @resource.errors.any?
   - content_for :notifications do
     .notification.notification-danger.animated.fadeInLeft
-      = icon('exclamation')
+      = icon_spina('exclamation')
       .notification-message
         =t 'spina.notifications.alert'
         %small= @resource.errors.full_messages.join('<br />').html_safe
       = link_to '#', data: {close_notification: true} do
-        = icon('cross')
+        = icon_spina('cross')
 
 = form_with model: @resource, url: spina.admin_resource_path(@resource) do |f|
   = hidden_field_tag :locale, @locale
@@ -18,7 +18,7 @@
         - if Spina.config.locales.size > 1
           %div{style: "display: inline-block", data: {dropdown: true}}
             = link_to '#', class: 'button button-default button-small', style: 'margin-left: 0; margin-right: 0', data: {trigger: 'dropdown', target: '#locales'} do
-              = icon('comment')
+              = icon_spina('comment')
               =t "spina.languages.#{@locale}"
               %i.icon.icon-chevron-down{style: 'font-size: 9px; margin-right: 0'}
 
@@ -29,7 +29,7 @@
 
     #header_actions
       %button.button.button-primary{type: 'submit', style: 'margin-right: 0'}
-        = icon('check')
+        = icon_spina('check')
         =t 'spina.save'
 
   .horizontal-form

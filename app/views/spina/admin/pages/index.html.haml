@@ -2,19 +2,19 @@
   %span{data: {dropdown: true}}
     = link_to spina.new_admin_page_path(params: {view_template: 'show'}), class: 'button button-primary', style: 'margin-right: 0', data: {trigger: ('dropdown' if current_theme.new_page_templates.size > 1), target: '#create_page_dropdown'} do
       .button-content
-        = icon('plus')
+        = icon_spina('plus')
         = t('spina.pages.new')
 
     .sliding-dropdown#create_page_dropdown.align-right
       .slide-controls
         %a.previous.muted.icon-only{href: '#'}
-          = icon('chevron-left')
+          = icon_spina('chevron-left')
 
         - current_theme.new_page_templates.each_with_index do |template, index|
           .slide-title{class: ('active' if index == 0), data: {target: "#slide-#{template[0].parameterize}"}}= template[1]
 
         %a.next.icon-only{href: '#'}
-          = icon('chevron-right')
+          = icon_spina('chevron-right')
 
       - current_theme.new_page_templates.each_with_index do |template, index|
         .slide{class: ('active' if index == 0), id: "slide-#{template[0].parameterize}"}
@@ -27,7 +27,7 @@
               .slide-dot{class: ('active' if index2 == index)}
 
           = link_to spina.new_admin_page_path(params: {view_template: template[0]}), class: 'button button-default' do
-            = icon('pencil-outline')
+            = icon_spina('pencil-outline')
             = t('spina.pages.new')
 
 .well

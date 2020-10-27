@@ -2,12 +2,12 @@
   - if @media_folders.any?
     = link_to '#', class: 'button button-default organize-switch', data: {organize_images: t('spina.photos.organize'), done_organizing: t('spina.photos.done_organizing')} do
       .button-content
-        = icon('random')
+        = icon_spina('random')
         = t('spina.photos.organize')
 
   = link_to new_admin_media_folder_path, class: 'button button-primary', style: 'margin-right: 0; margin-left: 4px', data: {remote: true} do
     .button-content
-      = icon('plus')
+      = icon_spina('plus')
       =t 'spina.photos.new_folder'
 
 .gallery-container

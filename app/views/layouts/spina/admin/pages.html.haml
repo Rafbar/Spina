@@ -1,17 +1,9 @@
-- content_for(:permanent_notice) do
-  - unless current_account.robots_allowed?
-    .permanent-notice.permanent-notice-info
-      = icon('search')
-      %p
-        =t 'spina.pages.invisible_to_search_engines'
-        %small=t 'spina.pages.invisible_to_search_engines_description'
-
 - content_for :application do
   %header#header
     #header_actions
       = link_to '#pages_list', class: 'button button-default sort-switch', data: {change_order: t('spina.pages.change_order'), done_changing_order: t('spina.pages.done_changing_order')} do
         .button-content
-          = icon('random')
+          = icon_spina('random')
           = t('spina.pages.change_order')
 
       = yield(:header_actions) if content_for?(:header_actions)

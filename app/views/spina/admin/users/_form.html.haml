@@ -4,7 +4,7 @@
 
     #header_actions
       %button.button.button-primary{type: 'submit'}
-        = icon('check')
+        = icon_spina('check')
         =t('spina.users.save')
 
       = link_to t('spina.cancel'), spina.admin_users_path, class: 'button'
@@ -12,7 +12,7 @@
   - if @user.errors.any?
     - content_for :notification_alert do
       .notification.notification-error{data: {icon: 'm'}}
-        %p 
+        %p
           = Spina::User.human_attribute_name :cannot_be_created
           %small
             - @user.errors.full_messages.each do |msg|

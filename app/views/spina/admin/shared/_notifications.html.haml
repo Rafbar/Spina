@@ -1,29 +1,29 @@
 %aside#notifications
   - if flash[:notice]
     .notification.animated.fadeInLeft
-      = icon('info')
+      = icon_spina('info')
       .notification-message
         = flash[:notice].html_safe
         %small= flash[:notice_small].try(:html_safe)
       = link_to '#', data: {close_notification: true} do
-        = icon('cross')
+        = icon_spina('cross')
 
   - if flash[:alert]
     .notification.notification-danger.animated.fadeInLeft
-      = icon('exclamation')
+      = icon_spina('exclamation')
       .notification-message
         = flash[:alert].html_safe
         %small= flash[:alert_small].try(:html_safe)
       = link_to '#', data: {close_notification: true} do
-        = icon('cross')
+        = icon_spina('cross')
 
   - if flash[:success]
     .notification.notification-success.animated.fadeInLeft
-      = icon('check')
+      = icon_spina('check')
       .notification-message
         = flash[:success].html_safe
         %small= flash[:success_small].try(:html_safe)
       = link_to '#', data: {close_notification: true} do
-        = icon('cross')
+        = icon_spina('cross')
 
   = yield(:notifications) if content_for?(:notifications)
