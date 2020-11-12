@@ -2,7 +2,7 @@
   = image_tag 'spina/spina.svg', class: 'animated fadeInDown', width: 72, height: 54
   - if @user.errors.any?
     .failed-to-login.animated.fadeInDown
-      .icon.icon-cross
+      = icon_spina('times')
       = @user.errors.full_messages.join('<br />').html_safe
 
   .login-fields

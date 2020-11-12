@@ -2,7 +2,7 @@
   = image_tag 'spina/spina.svg', width: 72, height: 54
   - if flash[:alert].present?
     .failed-to-login.animated.fadeInDown
-      .icon.icon-cross
+      = icon_spina('times')
       = flash[:alert]
 
   .login-fields

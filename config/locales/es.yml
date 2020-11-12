@@ -15,6 +15,7 @@ es:
         linkedin: LinkedIn
         logo: Logo
         name: Nombre del sitio
+        pinterest: Pinterest
         phone: Teléfono
         postal_code: Código postal
         robots_allowed: Visible en motores de búsqueda
@@ -49,7 +50,7 @@ es:
         menu_title: Título de navegación
         menu_title_placeholder: Deja en blanco para usar el título de la página
         no_parent: No página padre
-        resource: 
+        resource:
         seo_title: SEO <title>
         seo_title_placeholder: Este título es usado en <title>-tag
         show_in_menu: Mostrar en navegación
@@ -58,15 +59,15 @@ es:
         skip_to_first_child_description: Reenviar a la primera página hija
         title: Título
         title_placeholder: Título de la página
-        url_title: 
-        url_title_description: 
-        url_title_placeholder: 
+        url_title:
+        url_title_description:
+        url_title_placeholder:
         view_template: Plantilla de página
       spina/resource:
         label: Etiqueta
         order_by: Ordenar por
         parent_page: Página padre
-        view_template: 
+        view_template:
       spina/user:
         admin: Administrador
         admin_description: Los administradores pueden crear usuarios
@@ -96,7 +97,7 @@ es:
   spina:
     ago: atrás
     attachments:
-      choose_attachment: 
+      choose_attachment:
       insert: Insertar documento
       insert_multiple: Insertar documentos
     cancel: Cancelar
@@ -115,17 +116,17 @@ es:
       success: Puede utilizar su nueva contraseña
       unknown_user: Este usuario no existe
     images:
-      all_images: 
+      all_images:
       back: Regresar
       cannot_be_created: No puede ser creada
       choose_image: Elegir imagen
       choose_images: Elegir imágenes
-      confirm_selection: 
+      confirm_selection:
       delete: Borrar
       delete_confirmation: Esta seguro que desea borrar esta <strong>imagen</strong>?
       delete_folder: Borrar carpeta
-      done_organizing: 
-      insert_image: 
+      done_organizing:
+      insert_image:
       insert_photo: Insertar foto
       insert_photos: Insertar fotos
       link: Enlace
@@ -135,22 +136,22 @@ es:
       upload: Subir imáneges
       upload_image: Subir imagen
     languages:
-      bg: 
+      bg:
       de: Alemán
       en: Inglés
       es: Español
       fr: Francés
-      id: 
+      id:
       it: Italiano
       nl: Holandés
       pl: Polaco
-      pt-BR: 
-      ro: 
-      ru: 
-      sv: 
-      th: 
-      tr: 
-      zh-CN: 
+      pt-BR:
+      ro:
+      ru:
+      sv:
+      th:
+      tr:
+      zh-CN:
     login: Ingresar
     logout: Cerrar sesión
     main_menu: Menú principal
