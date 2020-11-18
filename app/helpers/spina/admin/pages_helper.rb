@@ -23,10 +23,19 @@ module Spina
       def build_parts(partable, parts)
         I18n.with_locale(@locale) do
           parts.map do |part|
-            part_attributes = current_theme.parts.find{|p|p[:name].to_s == part.to_s}
+            part_attributes = current_theme.parts.find{ |p| p[:name].to_s == part.to_s }
+            current = partable.find_part(part)
+            part_attributes[:title] = current.title if current
             partable.part(part_attributes)
           end
         end
+      end
+
+      def build_page_parts(page)
+        template_name = page.view_template.to_s
+        view_template = current_theme.view_templates.find{ |v| v[:name].to_s == template_name }
+        parts = view_template&.dig(:parts) || []
+        build_parts(page, parts)
       end
 
       def parts_partial_namespace(part_type)
@@ -51,7 +60,6 @@ module Spina
       def option_label(part, value)
         t(['options',part.name,value].compact.join('.'))
       end
-
     end
   end
 end
