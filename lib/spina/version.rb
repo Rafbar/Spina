@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Spina
-  VERSION = "2.0.0.adn3"
+  VERSION = '2.0.0.paragon4'
 end

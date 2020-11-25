@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    spina (2.0.0.adn1)
+    spina (2.0.0.paragon4)
       ancestry
       attr_json
       bcrypt
