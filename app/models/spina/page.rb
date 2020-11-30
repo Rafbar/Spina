@@ -22,7 +22,7 @@ module Spina
     scope :regular_pages, ->  { where(resource: nil) }
     scope :resource_pages, -> { where.not(resource: nil) }
     scope :active, -> { where(active: true) }
-    scope :sorted, -> { order(:position) }
+    scope :sorted, -> { i18n.order(:title) }
     scope :live, -> { active.where(draft: false) }
     scope :in_menu, -> { where(show_in_menu: true) }
 
@@ -94,7 +94,7 @@ module Spina
     private
 
       def set_resource_from_parent
-        self.resource_id = parent.resource_id 
+        self.resource_id = parent.resource_id
       end
 
       def touch_navigations

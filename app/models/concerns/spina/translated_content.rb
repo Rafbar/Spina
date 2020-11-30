@@ -3,7 +3,6 @@ module Spina
     extend ActiveSupport::Concern
 
     included do
-      
       # Store each locale's content in [locale]_content as an array of parts
       Spina.config.locales.each do |locale|
         attr_json "#{locale}_content".to_sym, AttrJson::Type::SpinaPartsModel.new, array: true, default: -> { [] }
@@ -11,9 +10,12 @@ module Spina
       end
 
       def find_part(name)
-        send("#{I18n.locale}_content").find{|part| part.name.to_s == name.to_s}
+        parts.find{|part| part.name.to_s == name.to_s}
       end
 
+      def parts
+        send("#{I18n.locale}_content")
+      end
     end
   end
 end

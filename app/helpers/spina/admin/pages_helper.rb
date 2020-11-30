@@ -32,9 +32,13 @@ module Spina
       end
 
       def build_page_parts(page)
-        template_name = page.view_template.to_s
-        view_template = current_theme.view_templates.find{ |v| v[:name].to_s == template_name }
-        parts = view_template&.dig(:parts) || []
+        if page.view_template.present?
+          template_name = page.view_template.to_s
+          view_template = current_theme.view_templates.find{ |v| v[:name].to_s == template_name }
+          parts = view_template&.dig(:parts) || []
+        else
+          parts = page.parts
+        end
         build_parts(page, parts)
       end
 
