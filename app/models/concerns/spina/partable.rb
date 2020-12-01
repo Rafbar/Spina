@@ -5,7 +5,6 @@ module Spina
     attr_accessor :view_context
 
     included do
-
       def part(attributes)
         part = find_part(attributes[:name]) || attributes[:part_type].constantize.new
 
@@ -27,10 +26,9 @@ module Spina
 
       private
 
-        def content_presenter
-          @content_presenter ||= ContentPresenter.new(view_context, self)
-        end
-
+      def content_presenter
+        @content_presenter ||= ContentPresenter.new(view_context, self)
+      end
     end
   end
 end
