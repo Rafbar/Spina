@@ -37,7 +37,7 @@ module Spina
           view_template = current_theme.view_templates.find{ |v| v[:name].to_s == template_name }
           parts = view_template&.dig(:parts) || []
         else
-          parts = page.parts
+          parts = page.parts.map(&:name)
         end
         build_parts(page, parts)
       end
