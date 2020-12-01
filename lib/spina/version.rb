@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module Spina
-  VERSION = '2.0.0.paragon5'
+  VERSION = '2.0.0.paragon6'
 end
