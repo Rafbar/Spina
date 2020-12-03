@@ -1,7 +1,7 @@
 .modal
   %header
     = link_to '#', data: {dismiss: "modal"} do
-      = icon('cross')
+      = icon_spina('times')
     - if @media_folder.new_record?
       %h3=t 'spina.photos.new_folder'
     - else
@@ -13,5 +13,5 @@
     %footer
       = link_to t('spina.cancel'), '#', data: {dismiss: 'modal'}
       = button_tag type: :submit, class: 'primary' do
-        %i.icon.icon-plus{style: 'margin-right: 4px'}
+        %i.fa.fa-plus{style: 'margin-right: 4px'}
         =t 'spina.photos.new_folder'

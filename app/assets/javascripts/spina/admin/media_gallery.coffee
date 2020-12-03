@@ -14,11 +14,11 @@ $(document).on 'click', '.organize-switch', (e) ->
   if disabled 
     $(this).addClass('button-success')
     $(this).text($(this).attr('data-done-organizing'))
-    $(this).prepend('<i class="icon icon-random"></i>')
+    $(this).prepend('<i class="fa fa-random"></i>')
   else 
     $(this).removeClass('button-success')
     $(this).text($(this).attr('data-organize-images'))
-    $(this).prepend('<i class="icon icon-random"></i>')
+    $(this).prepend('<i class="fa fa-random"></i>')
   $items.draggable('option', 'disabled', !disabled)
   e.preventDefault()
 

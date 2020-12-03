@@ -2,13 +2,15 @@
 
 A page in Spina has many parts. By default these parts can be one of the following:
 
-- Spina::Parts::Line
-- Spina::Parts::MultiLine
-- Spina::Parts::Text
-- Spina::Parts::Image
-- Spina::Parts::ImageCollection
-- Spina::Parts::Repeater
-- Spina::Parts::Option
+- `Spina::Parts::Line`
+- `Spina::Parts::MultiLine`
+- `Spina::Parts::Text`
+- `Spina::Parts::Image`
+- `Spina::Parts::ImageCollection`
+- `Spina::Parts::Attachment`
+- `Spina::Parts::Option`
+- `Spina::Parts::Checkbox`
+- `Spina::Parts::Repeater`
 
 These are the building blocks of your view templates. You can have an unlimited number of parts in a page. We prefer to keep the number of parts to a minimum so that managing your pages isn't too complex.
 

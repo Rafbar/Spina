@@ -6,7 +6,7 @@
         =t 'spina.notifications.alert'
         %small= @resource.errors.full_messages.join('<br />').html_safe
       = link_to '#', data: {close_notification: true} do
-        = icon_spina('cross')
+        = icon_spina('times')
 
 = form_with model: @resource, url: spina.admin_resource_path(@resource) do |f|
   = hidden_field_tag :locale, @locale
@@ -20,7 +20,7 @@
             = link_to '#', class: 'button button-default button-small', style: 'margin-left: 0; margin-right: 0', data: {trigger: 'dropdown', target: '#locales'} do
               = icon_spina('comment')
               =t "spina.languages.#{@locale}"
-              %i.icon.icon-chevron-down{style: 'font-size: 9px; margin-right: 0'}
+              %i.fa.fa-chevron-down{style: 'font-size: 9px; margin-right: 0'}
 
             %ul#locales
               - Spina.config.locales.each do |locale|
