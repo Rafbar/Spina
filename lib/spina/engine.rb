@@ -32,6 +32,7 @@ module Spina
 
       # Register JSON part types for editing content
       Spina::Part.register(
+        Spina::Parts::Checkbox,
         Spina::Parts::Line,
         Spina::Parts::MultiLine,
         Spina::Parts::Text,

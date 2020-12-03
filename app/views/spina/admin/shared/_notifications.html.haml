@@ -6,7 +6,7 @@
         = flash[:notice].html_safe
         %small= flash[:notice_small].try(:html_safe)
       = link_to '#', data: {close_notification: true} do
-        = icon_spina('cross')
+        = icon_spina('times')
 
   - if flash[:alert]
     .notification.notification-danger.animated.fadeInLeft
@@ -15,7 +15,7 @@
         = flash[:alert].html_safe
         %small= flash[:alert_small].try(:html_safe)
       = link_to '#', data: {close_notification: true} do
-        = icon_spina('cross')
+        = icon_spina('times')
 
   - if flash[:success]
     .notification.notification-success.animated.fadeInLeft
@@ -24,6 +24,6 @@
         = flash[:success].html_safe
         %small= flash[:success_small].try(:html_safe)
       = link_to '#', data: {close_notification: true} do
-        = icon_spina('cross')
+        = icon_spina('times')
 
   = yield(:notifications) if content_for?(:notifications)

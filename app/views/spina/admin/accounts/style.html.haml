@@ -8,7 +8,7 @@
             = link_to '#', class: 'button button-default button-small', style: 'margin-left: 0; margin-right: 0', data: {trigger: 'dropdown', target: '#locales'} do
               = icon_spina('comment')
               =t "spina.languages.#{@locale}"
-              %i.icon.icon-chevron-down{style: 'font-size: 9px; margin-right: 0'}
+              %i.fa.fa-chevron-down{style: 'font-size: 9px; margin-right: 0'}
 
             %ul#locales
               - Spina.config.locales.each do |locale|
