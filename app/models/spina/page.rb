@@ -22,7 +22,7 @@ module Spina
     scope :regular_pages, ->  { where(resource: nil) }
     scope :resource_pages, -> { where.not(resource: nil) }
     scope :active, -> { where(active: true) }
-    scope :sorted, -> { i18n.order(:title) }
+    scope :sorted, -> { Spina.config.position_sort ? order(:position) : i18n.order(:title) }
     scope :live, -> { active.where(draft: false) }
     scope :in_menu, -> { where(show_in_menu: true) }
 

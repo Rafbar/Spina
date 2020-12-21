@@ -1,9 +1,13 @@
 - content_for(:header_actions) do
   %span{data: {dropdown: true}}
-    = link_to spina.new_admin_page_path(params: {view_template: 'show'}), class: 'button button-primary', style: 'margin-right: 0', data: {trigger: ('dropdown' if current_theme.new_page_templates.size > 1), target: '#create_page_dropdown'} do
-      .button-content
-        = icon_spina('plus')
-        = t('spina.pages.new')
+    - if Spina.config.new_page
+      = link_to spina.new_admin_page_path(params: {view_template: 'show'}),
+          class: 'button button-primary', style: 'margin-right: 0',
+          data: {trigger: ('dropdown' if current_theme.new_page_templates.size > 1),
+                 target: '#create_page_dropdown'} do
+        .button-content
+          = icon_spina('plus')
+          = t('spina.pages.new')
 
     .sliding-dropdown#create_page_dropdown.align-right
       .slide-controls
