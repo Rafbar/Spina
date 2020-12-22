@@ -14,8 +14,9 @@ module Spina
   THEMES = []
 
   config_accessor :backend_path, :disable_frontend_routes, :storage,
-    :max_page_depth, :locales, :embedded_image_size, :disable_decorator_load,
-    :social_links
+                  :max_page_depth, :locales, :embedded_image_size, :disable_decorator_load,
+                  :social_links, :position_sort, :change_order, :new_page, :edit_title,
+                  :page_seo, :advanced
 
   self.backend_path = 'admin'
 
@@ -35,4 +36,15 @@ module Spina
   # Default: 2000x2000px
   self.embedded_image_size = "2000x2000>"
 
+  self.position_sort = false
+
+  self.change_order = true
+
+  self.new_page = true
+
+  self.edit_title = true
+
+  self.page_seo = true
+
+  self.advanced = true
 end
