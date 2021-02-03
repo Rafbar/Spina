@@ -1,14 +1,14 @@
-%nav#primary.transformed{data: {turbolinks_permanent: true}}
+%nav#primary.transformed
   %ul
-    %li{class: ('active' if (%w[pages photos attachments navigations resources] + Spina::Plugin.all.map { |plugin| plugin.namespace if current_theme.plugins.include?(plugin.name) }).include? controller_name)}
+    = spina_nav_li (%w[pages images attachments navigations resources] + Spina::Plugin.all.map { |plugin| plugin.namespace if current_theme.plugins.include?(plugin.name) }).include?(controller_name) do
       = link_to spina.admin_pages_path do
         = icon_spina('home')
-        = t('spina.website.title')
 
       %ul
-        %li{class: ('active' if (current_admin_path.start_with?('/pages') || current_admin_path.start_with?('/navigations')) && @page&.resource.blank?)}
+        = spina_nav_li current_admin_path.start_with?('/pages', '/navigations') && @page&.resource.blank? do
           = link_to t('spina.website.pages'), spina.admin_pages_path
-        %li{class: ('active' if current_admin_path.start_with?('/images', '/attachments'))}
+
+        = spina_nav_li current_admin_path.start_with?('/images', '/attachments') do
           = link_to t('spina.website.media_library'), spina.admin_images_path
 
         - Spina::Plugin.all.each do |plugin|
@@ -17,41 +17,37 @@
               = render "spina/admin/hooks/#{ plugin.namespace }/website_secondary_navigation", plugin: plugin
 
         - Spina::Resource.order(:label).each do |resource|
-          %li{class: ('active' if (@resource || @page&.resource) == resource)}= link_to resource.label, spina.admin_resource_path(resource)
-
-        %li
-          = link_to '#', class: 'back-to-main-menu' do
-            = icon_spina('caret-left')
-            =t 'spina.main_menu'
+          = spina_nav_li (@resource || @page&.resource) == resource do
+            = link_to resource.label, spina.admin_resource_path(resource)
 
     - Spina::Plugin.all.each do |plugin|
       - if current_theme.plugins.include? plugin.name
         - if lookup_context.exists? "spina/admin/hooks/#{ plugin.namespace }/_primary_navigation"
           = render "spina/admin/hooks/#{ plugin.namespace }/primary_navigation", plugin: plugin
 
-    %li{class: ('active' if %w[accounts users tenants].include? controller_name)}
-      = link_to spina.edit_admin_account_path do
-        = icon_spina('cog')
-        = t('spina.preferences.title')
+    - account_items = ''.html_safe
 
-      %ul
-        %li{class: ('active' if params[:action] == 'social')}
-          = link_to t('spina.preferences.social_media'), spina.social_admin_account_path
+    - unless Spina.config.social_links.empty?
+      - account_items << spina_nav_li(params[:action] == 'social') do
+        = link_to t('spina.preferences.social_media'), spina.social_admin_account_path
 
-        - Spina::Plugin.all.each do |plugin|
-          - if current_theme.plugins.include? plugin.name
-            - if lookup_context.exists? "spina/admin/hooks/#{ plugin.namespace }/_settings_secondary_navigation"
-              = render "spina/admin/hooks/#{ plugin.namespace }/settings_secondary_navigation", plugin: plugin
-          - if plugin.settings.present?
-            %li{class: ('active' if controller_name == 'settings' and params[:plugin] == plugin.namespace)}
-              = link_to t("spina.#{plugin.namespace}.title"), spina.admin_edit_settings_path(plugin.namespace)
+    - Spina::Plugin.all.each do |plugin|
+      - if current_theme.plugins.include? plugin.name
+        - if lookup_context.exists? "spina/admin/hooks/#{ plugin.namespace }/_settings_secondary_navigation"
+          - account_items << render("spina/admin/hooks/#{ plugin.namespace }/settings_secondary_navigation", plugin: plugin)
+      - if plugin.settings.present?
+        - account_items << spina_nav_li(controller_name == 'settings' && params[:plugin] == plugin.namespace) do
+          = link_to t("spina.#{plugin.namespace}.title"), spina.admin_edit_settings_path(plugin.namespace)
 
-        %li
-          = link_to '#', class: 'back-to-main-menu' do
-            = icon_spina('caret-left')
-            =t 'spina.main_menu'
+    - if !Spina.config.disable_account_edit || account_items.present?
+      = spina_nav_li  %w[accounts users tenants].include?(controller_name) do
+        = link_to Spina.config.disable_account_edit ? '#' : spina.edit_admin_account_path do
+          = icon_spina('cog')
+          = t('spina.preferences.title')
+
+        - unless account_items.empty?
+          %ul= account_items
 
     %li.bottom
-      = link_to Spina.config.main_admin_path, data: {turbolinks: false} do
+      = link_to Spina.config.main_admin_path, data: { turbolinks: false } do
         = icon_spina('caret-left')
-        Back to main Admin

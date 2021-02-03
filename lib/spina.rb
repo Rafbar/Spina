@@ -6,45 +6,44 @@ require 'spina/attr_json_spina_parts_model'
 require 'font-awesome-rails'
 
 module Spina
-
   include ActiveSupport::Configurable
 
   PARTS = []
   PLUGINS = []
   THEMES = []
 
-  config_accessor :backend_path, :disable_frontend_routes, :storage,
-                  :max_page_depth, :locales, :embedded_image_size, :disable_decorator_load,
-                  :social_links, :position_sort, :change_order, :new_page, :edit_title,
-                  :page_seo, :advanced
+  config_accessor(:advanced)                { true }
 
-  self.backend_path = 'admin'
+  config_accessor(:backend_path)            { 'admin' }
 
-  self.disable_frontend_routes = false
-  self.disable_decorator_load = false
+  config_accessor(:change_order)            { true }
 
-  self.storage = :file
+  config_accessor :current_user_method, :current_user_auth_path
 
-  self.max_page_depth = 5
+  config_accessor(:disable_account_edit)    { false }
 
-  self.locales = [I18n.default_locale]
+  config_accessor(:disable_decorator_load)  { false }
 
-  self.social_links = [:facebook, :twitter, :instagram, :youtube, :linkedin, :google_plus, :pinterest]
+  config_accessor(:disable_frontend_routes) { false }
+
+  config_accessor(:edit_title)              { true }
 
   # Images that are embedded in the Trix editor are resized to fit
   # You can optimize this for your website and go for a smaller (or larger) size
   # Default: 2000x2000px
-  self.embedded_image_size = "2000x2000>"
+  config_accessor(:embedded_image_size)     { '2000x2000>' }
 
-  self.position_sort = false
+  config_accessor(:storage)                 { :file }
 
-  self.change_order = true
+  config_accessor(:max_page_depth)          { 5 }
 
-  self.new_page = true
+  config_accessor(:locales)                 { [I18n.default_locale] }
 
-  self.edit_title = true
+  config_accessor(:new_page)                { true }
 
-  self.page_seo = true
+  config_accessor(:page_seo)                { true }
 
-  self.advanced = true
+  config_accessor(:position_sort)           { false }
+
+  config_accessor(:social_links)            { [:facebook, :twitter, :instagram, :youtube, :linkedin, :google_plus, :pinterest] }
 end

@@ -3,26 +3,26 @@ Spina::Engine.routes.draw do
   namespace :admin, path: Spina.config.backend_path do
     root to: "pages#index"
 
-    resource :account do
-      member do
-        get :style
-        get :analytics
-        get :social
+    unless Spina.config.disable_account_edit
+      resource :account, only: %i[edit update] do
+        get :style, :analytics, :social, on: :member
       end
     end
 
     get "/settings/:plugin", to: "settings#edit", as: :edit_settings
     patch "/settings/:plugin", to: "settings#update", as: :settings
 
-    resources :users
+    unless Spina.config.current_user_method
+      resources :users
 
-    # Sessions
-    resources :sessions
-    get "login" => "sessions#new"
-    get "logout" => "sessions#destroy"
+      # Sessions
+      resources :sessions
+      get "login" => "sessions#new"
+      get "logout" => "sessions#destroy"
 
-    # Passwords
-    resources :password_resets
+      # Passwords
+      resources :password_resets
+    end
 
     # Media library
     get 'media_library' => 'images#index', as: "media_library"
@@ -59,13 +59,13 @@ Spina::Engine.routes.draw do
     post :media_picker, to: 'media_picker#select'
   end
 
-  # Sitemap
-  resource :sitemap
-
-  # Robots.txt
-  get '/robots', to: 'pages#robots', constraints: { format: 'txt' }
-
   unless Spina.config.disable_frontend_routes
+    # Sitemap
+    resource :sitemap
+
+    # Robots.txt
+    get '/robots', to: 'pages#robots', constraints: { format: 'txt' }
+
     # Frontend
     root to: "pages#homepage"
 
@@ -76,5 +76,4 @@ Spina::Engine.routes.draw do
       (!(Rails.env.development? && request.env['PATH_INFO'].starts_with?('/rails/') || request.env['PATH_INFO'].starts_with?("/#{Spina.config.backend_path}") || request.env['PATH_INFO'].starts_with?('/attachments/'))) && request.path.exclude?("rails/active_storage")
     }
   end
-
 end

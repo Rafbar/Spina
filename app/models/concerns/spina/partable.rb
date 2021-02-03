@@ -20,6 +20,10 @@ module Spina
         find_part(name).present?
       end
 
+      def content_set?(name)
+        find_part(name)&.content.present?
+      end
+
       def content(name = nil)
         name ? find_part(name)&.content : content_presenter
       end

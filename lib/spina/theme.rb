@@ -1,10 +1,11 @@
 module Spina
   class Theme
 
-    attr_accessor :name, :title, :parts, :page_parts, :structures, :view_templates, :layout_parts, :custom_pages, :plugins, :public_theme, :config, :navigations, :resources
+    attr_accessor :name, :title, :parts, :page_parts, :structures, :view_templates,
+                  :layout_parts, :custom_pages, :plugins, :public_theme, :config,
+                  :navigations, :resources
 
     class << self
-
       def all
         ::Spina::THEMES
       end
@@ -22,7 +23,6 @@ module Spina
         end
         all << theme
       end
-
     end
 
     def initialize
@@ -46,6 +46,5 @@ module Spina
     def is_custom_undeletable_page?(view_template)
       @custom_pages.any? { |page| page[:view_template] == view_template && !page[:deletable] }
     end
-
   end
 end

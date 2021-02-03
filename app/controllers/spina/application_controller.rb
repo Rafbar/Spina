@@ -3,22 +3,28 @@ module Spina
 
     protect_from_forgery with: :exception
 
+    helper_method :current_theme, :current_spina_user, :current_account
+
     private
 
     def current_theme
       @current_theme ||= ::Spina::Theme.find_by_name(current_account.theme)
     end
-    helper_method :current_theme
 
-    def current_spina_user
-      @current_spina_user ||= ::Spina::User.where(id: session[:user_id]).first if session[:user_id]
+    if Spina.config.current_user_method
+      def current_spina_user
+        send(Spina.config.current_user_method)
+      end
+    else
+      def current_spina_user
+        return @current_spina_user if defined?(@current_spina_user)
+
+        @current_spina_user = Spina::User.find_by(id: session[:user_id]) if session[:user_id]
+      end
     end
-    helper_method :current_spina_user
 
     def current_account
       @current_account ||= ::Spina::Account.first
     end
-    helper_method :current_account
-
   end
 end

@@ -16,13 +16,15 @@ module Spina
       end
 
       def authorize_spina_user
-        redirect_to admin_login_path, flash: {information: I18n.t('spina.notifications.login')} unless current_spina_user
+        return if current_spina_user&.admin?
+
+        path = Spina.config.user_auth_path || admin_login_path
+        redirect_to path, flash: { information: I18n.t('spina.notifications.login') }
       end
 
       def authorize_admin
         render status: 401 unless current_spina_user.admin?
       end
-
     end
   end
 end

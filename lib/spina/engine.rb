@@ -14,7 +14,6 @@ require 'attr_json'
 
 module Spina
   class Engine < ::Rails::Engine
-
     isolate_namespace Spina
 
     config.autoload_paths += %W( #{config.root}/lib )
