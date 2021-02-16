@@ -36,23 +36,24 @@ module Spina
     private
 
       def main_app_image_url(image, variant_options = {})
-        # SVG's can't have variants, 
+        return if view_context.blank?
+
+        # SVG's can't have variants,
         # Render rails_service_blob_url directly instead
         return rails_service_blob_url(image) if image.svg?
-          
+
         # Other images (like PNG & JPG) can have variants
         variant_key = ActiveStorage::Variation.encode(variant_options)
         view_context.main_app.rails_blob_representation_url(image.signed_blob_id, variant_key, image.filename.presence || "image")
       end
 
       def rails_service_blob_url(file)
-        return if file.blank?
+        return if file.blank? || view_context.blank?
         view_context.main_app.rails_service_blob_url(file.signed_blob_id, filename: file.filename.presence || "file")
       end
 
       def find_part(name)
         container.find_part(name)
       end
-
   end
 end
