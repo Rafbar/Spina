@@ -10,8 +10,12 @@ hidden_input.val("");
 
   // Trix editor
   <% if params[:trix_toolbar_id].present? %>
-    $('trix-editor[toolbar="<%= params[:trix_toolbar_id] %>"]').trigger('image-insert', ["<%= main_app.url_for(@image.file) %>", "<%= params[:alt] %>", "<%= params[:link_to_url] %>"]);
-     $.hideModal();
+    <% if Spina.config.cdn_links %>
+      $('trix-editor[toolbar="<%= params[:trix_toolbar_id] %>"]').trigger('image-insert', ["<%= main_app.rails_public_blob_url(@image.file) %>", "<%= params[:alt] %>", "<%= params[:link_to_url] %>"]);
+    <% else %>
+      $('trix-editor[toolbar="<%= params[:trix_toolbar_id] %>"]').trigger('image-insert', ["<%= main_app.url_for(@image.file) %>", "<%= params[:alt] %>", "<%= params[:link_to_url] %>"]);
+    <% end %>
+    $.hideModal();
   <% end %>
 <% end %>
 
