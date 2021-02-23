@@ -11,7 +11,7 @@
         %div{style: "width: 200px; height: 150px; overflow: hidden"}
           - if f.object.signed_blob_id.present? && f.object.spina_image.present?
             - if Spina.config.cdn_links
-              = image_tag main_app.rails_public_blob_url(f.object.spina_image.variant(resize: "400x300^", crop: "400x300+0+0").processed), width: 200, height: 150
+              = image_tag main_app.rails_public_blob_url(f.object.spina_image.variant(resize: "400x300^", crop: "400x300+0+0")), width: 200, height: 150
             - else
               = image_tag main_app.url_for(f.object.spina_image.variant(resize: "400x300^", crop: "400x300+0+0")), width: 200, height: 150
 
