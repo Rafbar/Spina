@@ -37,19 +37,19 @@ fr:
         pages_description: Sélectionnez les pages que vous voulez utiliser dans cette navigation
       spina/page:
         ancestry: Page parente
-        created_at: 
+        created_at:
         description: Meta description
         description_description: Cette description sera affichée dans les résultats de recherche
         description_placeholder: Petite description de votre page
         draft: Brouillon
         draft_description: Idéal lorsque votre page n'est pas tout à fait terminée
-        link_url: 
-        link_url_description: 
-        link_url_placeholder: 
+        link_url:
+        link_url_description:
+        link_url_placeholder:
         menu_title: Titre dans la navigation
         menu_title_placeholder: Laissez vide pour utiliser le titre de la page
         no_parent: Pas de parent
-        resource: 
+        resource:
         seo_title: Balise SEO <title>
         seo_title_placeholder: Ce titre est utilisé dans a balise <title>
         show_in_menu: Afficher dans la navigation
@@ -58,15 +58,15 @@ fr:
         skip_to_first_child_description: Renvoyer vers la première page enfant
         title: Titre
         title_placeholder: Titre de la page
-        url_title: 
-        url_title_description: 
-        url_title_placeholder: 
+        url_title:
+        url_title_description:
+        url_title_placeholder:
         view_template: Modèle de page
       spina/resource:
-        label: 
-        order_by: 
-        parent_page: 
-        view_template: 
+        label:
+        order_by:
+        parent_page:
+        view_template:
       spina/user:
         admin: Administrateur
         admin_description: Les administrateurs peuvent créer des utilisateurs
@@ -96,14 +96,14 @@ fr:
   spina:
     ago: Il y a
     attachments:
-      choose_attachment: 
+      choose_attachment:
       insert: Insérer un document
       insert_multiple: Insérer des documents
     cancel: Annuler
     choose_from_library: Choisir parmi la bibliothèque
     close: Fermer
     delete: Supprimer
-    delete_confirmation: 'Êtes-vous sûr de vouloir supprimer : <strong>%{subject}</strong> ?'
+    delete_confirmation: 'Êtes-vous sûr de vouloir supprimer : `%{subject}` ?'
     edit: Editer
     edit_website: Éditer votre site
     forgot_password:
@@ -115,48 +115,48 @@ fr:
       success: Vous pouvez utiliser votre nouveau mot de passe
       unknown_user: Cet utilisateur n'existe pas
     images:
-      all_images: 
-      back: 
-      cannot_be_created: 
-      choose_image: 
-      choose_images: 
-      confirm_selection: 
-      delete: 
-      delete_confirmation: 
-      delete_folder: 
-      done_organizing: 
-      insert_image: 
-      insert_photo: 
-      insert_photos: 
-      link: 
-      new_folder: 
-      organize: 
-      remove_image: 
-      upload: 
-      upload_image: 
+      all_images:
+      back:
+      cannot_be_created:
+      choose_image:
+      choose_images:
+      confirm_selection:
+      delete:
+      delete_confirmation:
+      delete_folder:
+      done_organizing:
+      insert_image:
+      insert_photo:
+      insert_photos:
+      link:
+      new_folder:
+      organize:
+      remove_image:
+      upload:
+      upload_image:
     languages:
-      bg: 
-      de: 
+      bg:
+      de:
       en: Anglais
-      es: 
+      es:
       fr: Français
-      id: 
-      it: 
+      id:
+      it:
       nl: Néerlandais
-      pl: 
-      pt-BR: 
-      ro: 
-      ru: 
-      sv: 
-      th: 
-      tr: 
-      zh-CN: 
+      pl:
+      pt-BR:
+      ro:
+      ru:
+      sv:
+      th:
+      tr:
+      zh-CN:
     login: Connexion
     logout: Déconnexion
     main_menu: Menu principal
     media_library:
       attachments: Documents
-      images: 
+      images:
       photos: Images
     modal:
       agree: Oui, je suis sûr
@@ -167,13 +167,13 @@ fr:
       login: Vous devez d'abord vous identifier
       wrong_username_or_password: Mauvais email ou mot de passe
     options:
-      choose_option: 
+      choose_option:
     pages:
       advanced: Avancé
       change_order: Changer l'ordre
       concept: brouillon
       create_page: Nouvelle page %{template}
-      delete_confirmation: 'Êtes-vous sûr de vouloir supprimer la page :  <strong>%{subject}</strong> ?'
+      delete_confirmation: 'Êtes-vous sûr de vouloir supprimer la page :  `%{subject}` ?'
       done_changing_order: Changement d'ordre effectué
       invisible_to_search_engines: Votre site n'apparait pas sur les moteurs de recherche
       invisible_to_search_engines_description: Allez dans vos préférences pour activer l'indexation sur les moteurs de recherche.
@@ -195,7 +195,7 @@ fr:
       cannot_be_created: 'L''image n''a pas pu être traitée :'
       choose_images: Choisir des images
       delete: Supprimer
-      delete_confirmation: Êtes-vous sûr de vouloir supprimer cette <strong>image</strong> ?
+      delete_confirmation: Êtes-vous sûr de vouloir supprimer cette `image` ?
       delete_folder: Supprimer dossier
       done_organizing: Organisation faite
       insert_photo: Insérer une image
@@ -203,11 +203,11 @@ fr:
       link: 'URL de votre image:'
       new_folder: Nouveau dossier
       organize: Organiser les images
-      rename_folder: 
-      select_images: 
+      rename_folder:
+      select_images:
       upload_image: Envoyer une image
     preferences:
-      Analytics: 
+      Analytics:
       account: Général
       account_description: Les préférences personnelles
       account_save: Sauvegarder les préférences
@@ -227,7 +227,7 @@ fr:
       users_description: Gérer les utilisateurs et les administrateurs
     preview_website: Aperçu du site
     resources:
-      edit: 
+      edit:
     save: Enregistrer
     search: Rechercher...
     settings:
@@ -235,14 +235,14 @@ fr:
       title: Paramètres
     users:
       cannot_be_created: L'utilisateur ne peut pas être sauvegarder
-      delete_confirmation: 'Êtes-vous sûr de vouloir supprimer l''utilisateur :  <strong>%{user}</strong> ?'
+      delete_confirmation: 'Êtes-vous sûr de vouloir supprimer l''utilisateur :  `%{user}` ?'
       new: Nouvel utilisateur
       save: Sauvegarder l'utilisateur
-    visit_page: 
+    visit_page:
     website:
       all_pages: Toutes les pages
       documents: Documents
-      images: 
+      images:
       media_library: Bibliothèque de médias
       media_library_description: Voici où vous trouverez toutes vos images et documents
       pages: Pages

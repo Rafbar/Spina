@@ -9,10 +9,10 @@ ro:
         google_analytics: Google Analytics
         google_plus: Google+
         google_site_verification: Google Site Verification
-        instagram: 
+        instagram:
         kvk_identifier: Cod de identificare fiscală
         kvk_identifier_description: Cod de identificare fiscală
-        linkedin: 
+        linkedin:
         logo: Logo
         name: Nume website
         phone: Telefon
@@ -22,7 +22,7 @@ ro:
         twitter: Twitter
         vat_identifier: TVA
         vat_identifier_description: TVA
-        youtube: 
+        youtube:
       spina/attachment:
         created_at: Creat la
         name: Nume fișier
@@ -37,7 +37,7 @@ ro:
         pages_description: Selectați paginile pe care le doriți în această navigare
       spina/page:
         ancestry: Pagina părinte
-        created_at: 
+        created_at:
         description: Descriere Meta
         description_description: Această descriere va apărea în rezultatele căutării
         description_placeholder: Scurtă descriere a paginii
@@ -49,7 +49,7 @@ ro:
         menu_title: Titlul navigării
         menu_title_placeholder: Lăsați necompletat pentru a folosi titlul paginii
         no_parent: Fără părinte
-        resource: 
+        resource:
         seo_title: SEO <title>
         seo_title_placeholder: Acest titlu este folosit în tag-ul <title>
         show_in_menu: Arată în navigare
@@ -58,15 +58,15 @@ ro:
         skip_to_first_child_description: Redirecționează către prima pagină copil
         title: Titlu
         title_placeholder: Titlul paginii
-        url_title: 
-        url_title_description: 
-        url_title_placeholder: 
+        url_title:
+        url_title_description:
+        url_title_placeholder:
         view_template: Template pagină
       spina/resource:
-        label: 
-        order_by: 
-        parent_page: 
-        view_template: 
+        label:
+        order_by:
+        parent_page:
+        view_template:
       spina/user:
         admin: Administrator
         admin_description: Administratorii pot crea utilizatori
@@ -96,14 +96,14 @@ ro:
   spina:
     ago: acum
     attachments:
-      choose_attachment: 
+      choose_attachment:
       insert: Inserează document
       insert_multiple: Inserează documente
     cancel: Anulare
     choose_from_library: Alege din bibliotecă
     close: Închide
     delete: Ștergere
-    delete_confirmation: Sunteți sigur că doriți să ștergeți <strong>%{subject}</strong>?
+    delete_confirmation: Sunteți sigur că doriți să ștergeți `%{subject}`?
     edit: Editează
     edit_website: Editează website-ul tău
     forgot_password:
@@ -115,48 +115,48 @@ ro:
       success: Îți poți folosi parola nouă
       unknown_user: Acest utilizator nu există
     images:
-      all_images: 
-      back: 
-      cannot_be_created: 
-      choose_image: 
-      choose_images: 
-      confirm_selection: 
-      delete: 
-      delete_confirmation: 
-      delete_folder: 
-      done_organizing: 
-      insert_image: 
-      insert_photo: 
-      insert_photos: 
-      link: 
-      new_folder: 
-      organize: 
-      remove_image: 
-      upload: 
-      upload_image: 
+      all_images:
+      back:
+      cannot_be_created:
+      choose_image:
+      choose_images:
+      confirm_selection:
+      delete:
+      delete_confirmation:
+      delete_folder:
+      done_organizing:
+      insert_image:
+      insert_photo:
+      insert_photos:
+      link:
+      new_folder:
+      organize:
+      remove_image:
+      upload:
+      upload_image:
     languages:
-      bg: 
-      de: 
+      bg:
+      de:
       en: Engleză
-      es: 
-      fr: 
-      id: 
-      it: 
+      es:
+      fr:
+      id:
+      it:
       nl: Olandeză
-      pl: 
-      pt-BR: 
-      ro: 
-      ru: 
-      sv: 
-      th: 
-      tr: 
-      zh-CN: 
+      pl:
+      pt-BR:
+      ro:
+      ru:
+      sv:
+      th:
+      tr:
+      zh-CN:
     login: Login
     logout: Logout
     main_menu: Meniu principal
     media_library:
       attachments: Documente
-      images: 
+      images:
       photos: Imagini
     modal:
       agree: Da, sunt sigur
@@ -167,13 +167,13 @@ ro:
       login: Trebuie să vă autentificați întâi
       wrong_username_or_password: Email-ul sau parola sunt greșite
     options:
-      choose_option: 
+      choose_option:
     pages:
       advanced: Avansat
       change_order: Schimbă ordinea
       concept: ciornă
       create_page: "%{template} nou"
-      delete_confirmation: Sunteți sigur că doriți ștergerea paginii <strong>%{subject}</strong>?
+      delete_confirmation: Sunteți sigur că doriți ștergerea paginii `%{subject}`?
       done_changing_order: Ordine terminată
       invisible_to_search_engines: Website-ul nu este vizibil motoarelor de căutare
       invisible_to_search_engines_description: Mergeți în preferințe pentru activarea motoarele de căutare.
@@ -194,8 +194,8 @@ ro:
     photos:
       cannot_be_created: 'Imaginea nu a putut fi procesată:'
       choose_images: Alege imagini
-      delete: 
-      delete_confirmation: Sunteți sigur că doriți să ștergeți această <strong>imagine</strong>?
+      delete:
+      delete_confirmation: Sunteți sigur că doriți să ștergeți această `imagine`?
       delete_folder: Ștergere director
       done_organizing: Organizare terminată
       insert_photo: Inserează imagine
@@ -203,11 +203,11 @@ ro:
       link: 'URL-ul imaginii:'
       new_folder: Director nou
       organize: Organizează imagini
-      rename_folder: 
-      select_images: 
+      rename_folder:
+      select_images:
       upload_image: Încarcă o imagine
     preferences:
-      Analytics: 
+      Analytics:
       account: General
       account_description: Preferințe personale
       account_save: Salvează preferințe
@@ -227,7 +227,7 @@ ro:
       users_description: Gestionare utilizatori și administratori
     preview_website: Previzualizare website
     resources:
-      edit: 
+      edit:
     save: Salvează
     search: Caută...
     settings:
@@ -235,14 +235,14 @@ ro:
       title: Setări
     users:
       cannot_be_created: Utilizatorul nu poate fi salvat
-      delete_confirmation: Sunteți sigur că doriți ștergerea utilizatorului <strong>%{user}</strong>?
+      delete_confirmation: Sunteți sigur că doriți ștergerea utilizatorului `%{user}`?
       new: Utilizator nou
       save: Salvare utilizator
-    visit_page: 
+    visit_page:
     website:
       all_pages: Toate paginile
       documents: Documente
-      images: 
+      images:
       media_library: Bibliotecă media
       media_library_description: Aici găsești toate imaginile și documentele tale
       pages: Pagini

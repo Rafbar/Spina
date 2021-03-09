@@ -104,7 +104,7 @@ es:
     choose_from_library: Elegir de la biblioteca
     close: Cerrar
     delete: Eliminar
-    delete_confirmation: Seguro que quieres eliminar <strong>%{subject}</strong>?
+    delete_confirmation: Seguro que quieres eliminar `%{subject}`?
     edit: Editar
     edit_website: Editar sitio
     forgot_password:
@@ -123,7 +123,7 @@ es:
       choose_images: Elegir imágenes
       confirm_selection:
       delete: Borrar
-      delete_confirmation: Esta seguro que desea borrar esta <strong>imagen</strong>?
+      delete_confirmation: Esta seguro que desea borrar esta `imagen`?
       delete_folder: Borrar carpeta
       done_organizing:
       insert_image:
@@ -168,13 +168,13 @@ es:
       login: Primero debes ingresar
       wrong_username_or_password: Email o password incorrecto
     options:
-      choose_option: 
+      choose_option:
     pages:
       advanced: Avanzado
       change_order: Cambiar orden
       concept: concepto
       create_page: Nuevo %{template}
-      delete_confirmation: Seguro que quieres eliminar la página <strong>%{subject}</strong>?
+      delete_confirmation: Seguro que quieres eliminar la página `%{subject}`?
       done_changing_order: Ordenamiento finalizado
       invisible_to_search_engines: Tu sitio es invisible para los motores de búsqueda
       invisible_to_search_engines_description: Ingresa a preferencias para activar los motores de búsqueda.
@@ -196,7 +196,7 @@ es:
       cannot_be_created: 'Tu imagen no puede ser procesada:'
       choose_images: Seleccionar imágenes
       delete: Borrar
-      delete_confirmation: Seguro que deseas eliminar ésta <strong>imagen</strong>?
+      delete_confirmation: Seguro que deseas eliminar ésta `imagen`?
       delete_folder: Borrar carpeta
       done_organizing: Terminar la organización
       insert_photo: Insertar imagen
@@ -205,10 +205,10 @@ es:
       new_folder: Nueva carpeta
       organize: Organizar imágenes
       rename_folder: Renombrar carpeta
-      select_images: 
+      select_images:
       upload_image: Subir una imagen
     preferences:
-      Analytics: 
+      Analytics:
       account: General
       account_description: Preferencias personales
       account_save: Guardar preferencias
@@ -228,7 +228,7 @@ es:
       users_description: Administrar usuarios y administradores
     preview_website: Previsualizar sitio
     resources:
-      edit: 
+      edit:
     save: Guardar
     search: Buscar...
     settings:
@@ -236,7 +236,7 @@ es:
       title: Configuraciones
     users:
       cannot_be_created: El usuario no puede ser
-      delete_confirmation: Estás seguro que deseas eliminar al usuario <strong>%{user}</strong>?
+      delete_confirmation: Estás seguro que deseas eliminar al usuario `%{user}`?
       new: Nuevo usuario
       save: Guardar usuario
     visit_page: Visitar página

@@ -58,9 +58,9 @@ nl:
         skip_to_first_child_description: Doorsturen naar eerste onderliggende pagina
         title: Titel
         title_placeholder: Titel van de pagina
-        url_title: 
-        url_title_description: 
-        url_title_placeholder: 
+        url_title:
+        url_title_description:
+        url_title_placeholder:
         view_template: Pagina template
       spina/resource:
         label: Label
@@ -103,7 +103,7 @@ nl:
     choose_from_library: Kies uit bibliotheek
     close: Sluiten
     delete: Verwijderen
-    delete_confirmation: Weet je zeker dat je <strong>%{subject}</strong> wilt verwijderen?
+    delete_confirmation: Weet je zeker dat je `%{subject}` wilt verwijderen?
     edit: Bewerken
     edit_website: Bewerk je website
     forgot_password:
@@ -122,7 +122,7 @@ nl:
       choose_images: Kies afbeeldingen
       confirm_selection: Bevestig selectie
       delete: Verwijderen
-      delete_confirmation: Weet je zeker dat je deze <strong>afbeelding</strong> wilt verwijderen?
+      delete_confirmation: Weet je zeker dat je deze `afbeelding` wilt verwijderen?
       delete_folder: Verwijder folder
       done_organizing: Klaar met slepen
       insert_image: Afbeelding invoegen
@@ -173,7 +173,7 @@ nl:
       change_order: Volgorde wijzigen
       concept: concept
       create_page: "%{template} invullen"
-      delete_confirmation: Weet je zeker dat je de pagina <strong>%{subject}</strong> wilt verwijderen?
+      delete_confirmation: Weet je zeker dat je de pagina `%{subject}` wilt verwijderen?
       done_changing_order: Klaar met slepen
       invisible_to_search_engines: Je website is niet zichtbaar voor zoekmachines
       invisible_to_search_engines_description: Bij voorkeuren voor Statistieken en zoekmachines kun je dit activeren.
@@ -195,7 +195,7 @@ nl:
       cannot_be_created: 'Foto kon niet worden verwerkt:'
       choose_images: Kies afbeeldingen
       delete: Verwijderen
-      delete_confirmation: Weet je zeker dat je deze <strong>foto</strong> wilt verwijderen?
+      delete_confirmation: Weet je zeker dat je deze `foto` wilt verwijderen?
       delete_folder: Verwijder folder
       done_organizing: Klaar met slepen
       insert_photo: Afbeelding invoegen
@@ -235,7 +235,7 @@ nl:
       title: Voorkeuren
     users:
       cannot_be_created: De gebruiker kan niet worden opgeslagen
-      delete_confirmation: Weet je zeker dat je de gebruiker <strong>%{user}</strong> wilt verwijderen?
+      delete_confirmation: Weet je zeker dat je de gebruiker `%{user}` wilt verwijderen?
       new: Nieuwe gebruiker
       save: Gebruiker opslaan
     visit_page: Bekijk pagina

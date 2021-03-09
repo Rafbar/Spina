@@ -37,7 +37,7 @@ de:
         pages_description: Wähle die Seiten aus, die du in diesem Menü verwenden willst
       spina/page:
         ancestry: Elternseite
-        created_at: 
+        created_at:
         description: Meta Beschreibung
         description_description: Diese Beschreibung wird in den Suchergebnissen angezeigt
         description_placeholder: Kurze Beschreibung deiner Seite
@@ -49,7 +49,7 @@ de:
         menu_title: Menü-Titel
         menu_title_placeholder: Leer lassen um den Seiten-Titel zu verwenden
         no_parent: Kein Eltern Element
-        resource: 
+        resource:
         seo_title: SEO <title>
         seo_title_placeholder: Dieser Titel wird im <title>-tag verwendet
         show_in_menu: In der Navigation anzeigen
@@ -58,15 +58,15 @@ de:
         skip_to_first_child_description: Zur ersten Seite
         title: Titel
         title_placeholder: Seiten-Titel
-        url_title: 
-        url_title_description: 
-        url_title_placeholder: 
+        url_title:
+        url_title_description:
+        url_title_placeholder:
         view_template: Seiten-Template
       spina/resource:
-        label: 
-        order_by: 
-        parent_page: 
-        view_template: 
+        label:
+        order_by:
+        parent_page:
+        view_template:
       spina/user:
         admin: Administrator
         admin_description: Administratoren können Benutzer anlegen
@@ -96,14 +96,14 @@ de:
   spina:
     ago: vor
     attachments:
-      choose_attachment: 
+      choose_attachment:
       insert: Dokument einfügen
       insert_multiple: Dokumente einfügen
     cancel: Abbrechen
     choose_from_library: Wähle aus Bibliothek
     close: Schließen
     delete: Löschen
-    delete_confirmation: Bist du sicher, dass du <strong>%{subject}</strong> löschen möchtest?
+    delete_confirmation: Bist du sicher, dass du `%{subject}` löschen möchtest?
     edit: Bearbeiten
     edit_website: Deine Website bearbeiten
     forgot_password:
@@ -115,48 +115,48 @@ de:
       success: Du kannst dein neues Passwort verwenden
       unknown_user: Dieser Nutzer existiert nicht
     images:
-      all_images: 
-      back: 
-      cannot_be_created: 
-      choose_image: 
-      choose_images: 
-      confirm_selection: 
-      delete: 
-      delete_confirmation: 
-      delete_folder: 
-      done_organizing: 
-      insert_image: 
-      insert_photo: 
-      insert_photos: 
-      link: 
-      new_folder: 
-      organize: 
-      remove_image: 
-      upload: 
-      upload_image: 
+      all_images:
+      back:
+      cannot_be_created:
+      choose_image:
+      choose_images:
+      confirm_selection:
+      delete:
+      delete_confirmation:
+      delete_folder:
+      done_organizing:
+      insert_image:
+      insert_photo:
+      insert_photos:
+      link:
+      new_folder:
+      organize:
+      remove_image:
+      upload:
+      upload_image:
     languages:
-      bg: 
-      de: 
+      bg:
+      de:
       en: Englisch
-      es: 
-      fr: 
-      id: 
-      it: 
+      es:
+      fr:
+      id:
+      it:
       nl: Holländisch
-      pl: 
-      pt-BR: 
-      ro: 
-      ru: 
-      sv: 
-      th: 
-      tr: 
-      zh-CN: 
+      pl:
+      pt-BR:
+      ro:
+      ru:
+      sv:
+      th:
+      tr:
+      zh-CN:
     login: Login
     logout: Logout
     main_menu: Hauptmenü
     media_library:
       attachments: Dokumente
-      images: 
+      images:
       photos: Bilder
     modal:
       agree: Ja, ich bin sicher
@@ -167,13 +167,13 @@ de:
       login: Du musst dich zuerst einloggen
       wrong_username_or_password: Falsche E-Mail oder Passwort
     options:
-      choose_option: 
+      choose_option:
     pages:
       advanced: Erweitert
       change_order: Reihenfolge ändern
       concept: Entwurf
       create_page: Neu %{template}
-      delete_confirmation: Bist du sicher, dass du die Seite <strong>%{subject}</strong> löschen möchtest?
+      delete_confirmation: Bist du sicher, dass du die Seite `%{subject}` löschen möchtest?
       done_changing_order: Reihenfolge speichern
       invisible_to_search_engines: Deine Website ist für Suchmaschinen nicht sichtbar.
       invisible_to_search_engines_description: Gehe zu deinen Einstellungen um Suchmaschinen-Support zu aktivieren.
@@ -194,8 +194,8 @@ de:
     photos:
       cannot_be_created: 'Bild kann nicht verarbeitet werden:'
       choose_images: Wähle Bilder aus
-      delete: 
-      delete_confirmation: Bist du sicher, dass du das Bild <strong>%{image}</strong> löschen möchtest?
+      delete:
+      delete_confirmation: Bist du sicher, dass du das Bild `%{image}` löschen möchtest?
       delete_folder: Lösche Ordner
       done_organizing: Organisieren abgeschlossen
       insert_photo: Bild einfügen
@@ -203,11 +203,11 @@ de:
       link: 'URL des Bildes:'
       new_folder: Neuer Ordner
       organize: Organisiere Bilder
-      rename_folder: 
-      select_images: 
+      rename_folder:
+      select_images:
       upload_image: Bild hochladen
     preferences:
-      Analytics: 
+      Analytics:
       account: Allgemein
       account_description: Persönliche Einstellungen
       account_save: Einstellungen speichern
@@ -227,7 +227,7 @@ de:
       users_description: Benutzer und Administratoren verwalten
     preview_website: Vorschau der Webseite
     resources:
-      edit: 
+      edit:
     save: Speichern
     search: Suchen...
     settings:
@@ -235,14 +235,14 @@ de:
       title: Einstellungen
     users:
       cannot_be_created: Der Benutzer kann nicht gespeichert werden
-      delete_confirmation: Bist du sicher, dass du den Benutzer <strong>%{user}</strong> löschen möchtest?
+      delete_confirmation: Bist du sicher, dass du den Benutzer `%{user}` löschen möchtest?
       new: Neuer Benutzer
       save: Benutzer speichern
-    visit_page: 
+    visit_page:
     website:
       all_pages: Alle Seiten
       documents: Dokumente
-      images: 
+      images:
       media_library: Medien-Bibliothek
       media_library_description: Hier findest du alle deine Bilder und Dokumente
       pages: Seiten

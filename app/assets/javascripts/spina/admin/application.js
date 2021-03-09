@@ -34,11 +34,9 @@
 //= require ./tabs
 //= require ./forms
 //= require ./dropdown
-//= require ./navigation
 //= require ./notifications
 //= require ./media_gallery
 
-//= require ./confirm_delete
 //= require ./pages
 
 //= require ./trix

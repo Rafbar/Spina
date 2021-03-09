@@ -9,10 +9,10 @@ th:
         google_analytics: วิเคราะห์ทาง Google
         google_plus: Google+
         google_site_verification: ตรวจสอบไซต์
-        instagram: 
+        instagram:
         kvk_identifier: การค้า
         kvk_identifier_description: คำอธิบายทางการค้า
-        linkedin: 
+        linkedin:
         logo: โลโก้
         name: ชื่อเว็บไซต์
         phone: โทรศัพท์
@@ -22,7 +22,7 @@ th:
         twitter: Twitter
         vat_identifier: ภาษีมูลค่าเพิ่ม
         vat_identifier_description: คำอธิบายภาษีมูลค่าเพิ่ม
-        youtube: 
+        youtube:
       spina/attachment:
         created_at: สร้าง
         name: ชื่อ
@@ -37,7 +37,7 @@ th:
         pages_description: เลือกหน้าเพจที่คุณต้องการใช้ในการนำทางนี้
       spina/page:
         ancestry: หน้าแรก
-        created_at: 
+        created_at:
         description: คำอธิบาย meta
         description_description: คำอธิบายนี้จะปรากฏในผลลัพธ์การค้นหา
         description_placeholder: คำอธิบายโดยย่อของหน้าเว็บของคุณ
@@ -49,7 +49,7 @@ th:
         menu_title: ชื่อการนำทาง
         menu_title_placeholder: เว้นว่างไว้เพื่อใช้ชื่อหน้า
         no_parent: ไม่มีเพจระดับบน
-        resource: 
+        resource:
         seo_title: SEO <title>
         seo_title_placeholder: ชื่อนี้ใช้ใน <title> -tag
         show_in_menu: แสดงการนำทาง
@@ -58,15 +58,15 @@ th:
         skip_to_first_child_description: ส่งต่อไปยังหน้าแรก
         title: ชื่อเรื่อง
         title_placeholder: ชื่อเรื่องของหน้า
-        url_title: 
-        url_title_description: 
-        url_title_placeholder: 
+        url_title:
+        url_title_description:
+        url_title_placeholder:
         view_template: เทมเพลตของเพจ
       spina/resource:
-        label: 
-        order_by: 
-        parent_page: 
-        view_template: 
+        label:
+        order_by:
+        parent_page:
+        view_template:
       spina/user:
         admin: ผู้ดูแลระบบ
         admin_description: ผู้ดูแลระบบสามารถสร้างผู้ใช้ได้
@@ -96,14 +96,14 @@ th:
   spina:
     ago: อายุ
     attachments:
-      choose_attachment: 
+      choose_attachment:
       insert: แทรกเอกสาร
       insert_multiple: แทรกเอกสาร
     cancel: ยกเลิก
     choose_from_library: เลือกจากไลบารี
     close: ปิด
     delete: ลบ
-    delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบ <strong>%{subject}</strong>?
+    delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบ `%{subject}`?
     edit: แก้ไข
     edit_website: แก้ไขเว็บไซต์
     forgot_password:
@@ -115,48 +115,48 @@ th:
       success: คุณสามารถใช้รหัสผ่านใหม่ได้
       unknown_user: ไม่มีผู้ใช้รายนี้
     images:
-      all_images: 
-      back: 
-      cannot_be_created: 
-      choose_image: 
-      choose_images: 
-      confirm_selection: 
-      delete: 
-      delete_confirmation: 
-      delete_folder: 
-      done_organizing: 
-      insert_image: 
-      insert_photo: 
-      insert_photos: 
-      link: 
-      new_folder: 
-      organize: 
-      remove_image: 
-      upload: 
-      upload_image: 
+      all_images:
+      back:
+      cannot_be_created:
+      choose_image:
+      choose_images:
+      confirm_selection:
+      delete:
+      delete_confirmation:
+      delete_folder:
+      done_organizing:
+      insert_image:
+      insert_photo:
+      insert_photos:
+      link:
+      new_folder:
+      organize:
+      remove_image:
+      upload:
+      upload_image:
     languages:
-      bg: 
-      de: 
+      bg:
+      de:
       en: ภาษาอังกฤษ
-      es: 
-      fr: 
-      id: 
-      it: 
+      es:
+      fr:
+      id:
+      it:
       nl: ไทย
-      pl: 
-      pt-BR: 
-      ro: 
-      ru: 
-      sv: 
-      th: 
-      tr: 
-      zh-CN: 
+      pl:
+      pt-BR:
+      ro:
+      ru:
+      sv:
+      th:
+      tr:
+      zh-CN:
     login: ลงชื่อเข้าใช้
     logout: ลงชื่อออก
     main_menu: เมนูหลัก
     media_library:
       attachments: เอกสาร
-      images: 
+      images:
       photos: รูปภาพ
     modal:
       agree: ตกลง
@@ -167,13 +167,13 @@ th:
       login: คุณต้องเข้าสู่ระบบก่อน
       wrong_username_or_password: อีเมลหรือรหัสผ่านไม่ถูกต้อง
     options:
-      choose_option: 
+      choose_option:
     pages:
       advanced: ขั้นสูง
       change_order: เปลี่ยนออเดอร์
       concept: คอนเซ็ปท์
       create_page: สร้างหน้าใหม่ %{template}
-      delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบหน้านี้ <strong>%{subject}</strong>?
+      delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบหน้านี้ `%{subject}`?
       done_changing_order: การสั่งซื้อเสร็จสิ้น
       invisible_to_search_engines: เว็บไซต์ของคุณไม่สามารถใช้งานได้กับเครื่องมือค้นหา
       invisible_to_search_engines_description: ป้อนการตั้งค่าเพื่อเปิดใช้งานเครื่องมือค้นหา
@@ -193,9 +193,9 @@ th:
     permanently_delete: ลบอย่างถาวร
     photos:
       cannot_be_created: 'รูปภาพของคุณไม่สามารถประมวลผลได้:'
-      choose_images: 
-      delete: 
-      delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบ <strong> รูปภาพนี้ </strong>?
+      choose_images:
+      delete:
+      delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบ ` รูปภาพนี้ `?
       delete_folder: ลบโฟลเดอร์
       done_organizing: เสร็จสิ้นการจัดรูปภาพ
       insert_photo: แทรกรูปภาพ
@@ -203,7 +203,7 @@ th:
       link: 'URL รูปภาพของคุณ:'
       new_folder: โฟลเดอร์ใหม่
       organize: จัดระเบียบรูปภาพ
-      rename_folder: 
+      rename_folder:
       select_images: เลือกรูปภาพ
       upload_image: อัปโหลดรูปภาพ
     preferences:
@@ -211,7 +211,7 @@ th:
       account: ทั่วไป
       account_description: ความชอบส่วนบุคคล
       account_save: บันทึกการตั้งค่า
-      analytics: 
+      analytics:
       analytics_description: เชื่อมโยงบัญชีของคุณเพื่อการวิเคราะห์แบบเรียลไทม์
       analytics_save: บันทึกการตั้งค่า
       domain_name_settings: การกำหนดค่าโดเมน
@@ -227,7 +227,7 @@ th:
       users_description: จัดการผู้ใช้และผู้ดูแลระบบ
     preview_website: ตัวอย่างเว็บไซต์
     resources:
-      edit: 
+      edit:
     save: บันทึก
     search: ค้นหา
     settings:
@@ -235,14 +235,14 @@ th:
       title: การตั้งค่า
     users:
       cannot_be_created: ไม่สามารถบันทึกการสร้างได้
-      delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบผู้ใช้นี้ <strong>%{user}</strong>?
+      delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบผู้ใช้นี้ `%{user}`?
       new: ผู้ใช้ใหม่
       save: บันทึกผู้ใช้
-    visit_page: 
+    visit_page:
     website:
       all_pages: หน้าเพจทั้งหมด
       documents: เอกสาร
-      images: 
+      images:
       media_library: มีเดียไลบรารี
       media_library_description: คุณจะพบรูปภาพและเอกสารทั้งหมดของคุณ
       pages: หน้าเพจ

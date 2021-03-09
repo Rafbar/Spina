@@ -1,0 +1,79 @@
+var ready = function() {
+  if ($.isFunction($.fn.nestable)) {
+    $(".dd").nestable({
+      maxDepth: "<%= Spina.config.max_page_depth %>"
+    });
+  }
+
+  return $(".sortable-grid").sortable().bind("sortupdate", function(e) {
+    var position_array = [];
+
+    $(e.target).find("li.image").each(function(index) {
+      return position_array.push($(this).data("image-id"));
+    });
+
+    return $(e.target).parents(".horizontal-form-content").find(".image-positions").val(position_array.join(","));
+  });
+};
+
+$(document).on("turbolinks:load", ready);
+
+$(document).on("click", "form .add_structure_item_fields", function(event) {
+  var $structureForm = $(this).parents(".structure-form");
+  var time = new Date().getTime();
+  var regexp = new RegExp((($(this).data("id")) + "|new_association"), "g");
+  var $fields = $($(this).data("fields").replace(regexp, time));
+  var $content = $structureForm.find(".structure-form-content");
+  $content.append($fields);
+  $content.find("input[data-switch]").spinaSwitch();
+
+  var $link = $(
+    ("<li data-part-id='" + (time) + "'><a href='#structure_form_pane_" + (time) + "'><i class='fa fa-bars sortable-handle'></i> </a></li>")
+  );
+
+  $structureForm.find(".structure-form-menu ul").append($link);
+  $fields.attr("id", ("structure_form_pane_" + (time)));
+  $link.find("a").click();
+  $structureForm.trigger("spina:structure_added");
+  return event.preventDefault();
+});
+
+$(document).on("click", "form .remove_structure_item_fields", function(event) {
+  $(this).prev("input[type=hidden]").val("1");
+  var $pane = $(this).closest(".structure-form-pane");
+  var $link = $(("a[href='#" + ($pane.attr("id")) + "']")).parents("li");
+  var $previousLink = $link.siblings("li:visible");
+  $previousLink.find("a").trigger("click");
+  $link.hide();
+  $pane.hide();
+  $link.remove();
+  $pane.remove();
+  return event.preventDefault();
+});
+
+$(document).on(
+  "change",
+  ".structure-form-pane .structure-form-part:first-of-type input",
+  function(event) {
+    var value = $(this).val();
+    var $pane = $(this).parents(".structure-form-pane");
+    var $link = $(("a[href='#" + ($pane.attr("id")) + "']"));
+    return $link.html(("<i class='fa fa-bars sortable-handle'></i> " + (value)));
+  }
+);
+
+$(document).on("click", ".sort-switch", function(event) {
+  $($(this).attr("href") + " .dd-item-inner").toggleClass("dd-handle");
+
+  if ($(this).hasClass("button-success")) {
+    $(this).removeClass("button-success");
+    $(this).text($(this).data("change-order"));
+    $(this).prepend("<i class=\"fa fa-random\"></i>");
+  } else {
+    $(this).addClass("button-success");
+    $(this).text($(this).data("done-changing-order"));
+    $(this).prepend("<i class=\"fa fa-check\"></i>");
+  }
+
+  return false;
+});

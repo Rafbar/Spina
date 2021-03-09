@@ -37,7 +37,7 @@ pt-BR:
         pages_description: Selecione as páginas que você quer usar nesta navegação
       spina/page:
         ancestry: Página pai
-        created_at: 
+        created_at:
         description: Meta descrição
         description_description: Esta descrição será exibida nos resultados de busca
         description_placeholder: Descrição resumida da sua página
@@ -49,7 +49,7 @@ pt-BR:
         menu_title: Título do menu
         menu_title_placeholder: Deixe vazio para utilizar o título da página
         no_parent: Nenhum pai
-        resource: 
+        resource:
         seo_title: SEO <title>
         seo_title_placeholder: Este título é utilizado na tag <title>
         show_in_menu: Mostrar no menu de navegação
@@ -58,15 +58,15 @@ pt-BR:
         skip_to_first_child_description: Encaminhar para a primeira página filha
         title: Título
         title_placeholder: Título da página
-        url_title: 
-        url_title_description: 
-        url_title_placeholder: 
+        url_title:
+        url_title_description:
+        url_title_placeholder:
         view_template: Modelo de página
       spina/resource:
-        label: 
-        order_by: 
-        parent_page: 
-        view_template: 
+        label:
+        order_by:
+        parent_page:
+        view_template:
       spina/user:
         admin: Administrador
         admin_description: Administradores podem criar usuários
@@ -96,14 +96,14 @@ pt-BR:
   spina:
     ago: atrás
     attachments:
-      choose_attachment: 
+      choose_attachment:
       insert: Inserir documento
       insert_multiple: Inserir documentos
     cancel: Cancelar
     choose_from_library: Escolher da biblioteca
     close: Fechar
     delete: Remover
-    delete_confirmation: Tem certeza que deseja remover <strong>%{subject}</strong>?
+    delete_confirmation: Tem certeza que deseja remover `%{subject}`?
     edit: Editar
     edit_website: Editar seu site
     forgot_password:
@@ -115,42 +115,42 @@ pt-BR:
       success: Você já pode usar sua nova senha
       unknown_user: Este usuário não existe
     images:
-      all_images: 
-      back: 
+      all_images:
+      back:
       cannot_be_created: 'Imagem não pôde ser processada:'
-      choose_image: 
+      choose_image:
       choose_images: Escolher imagens
-      confirm_selection: 
+      confirm_selection:
       delete: Excluir
-      delete_confirmation: Tem certeza que deseja remover esta <strong>imagem</strong>?
+      delete_confirmation: Tem certeza que deseja remover esta `imagem`?
       delete_folder: Excluir pasta
       done_organizing: Concluir organização
-      insert_image: 
+      insert_image:
       insert_photo: Inserir imagem
       insert_photos: Inserir imagens
       link: 'URL da sua imagem:'
       new_folder: Nova pasta
       organize: Organizar imagens
-      remove_image: 
-      upload: 
+      remove_image:
+      upload:
       upload_image: Enviar uma imagem
     languages:
-      bg: 
-      de: 
+      bg:
+      de:
       en: Inglês
-      es: 
-      fr: 
-      id: 
-      it: 
+      es:
+      fr:
+      id:
+      it:
       nl: Neerlandês
-      pl: 
-      pt-BR: 
-      ro: 
-      ru: 
-      sv: 
-      th: 
-      tr: 
-      zh-CN: 
+      pl:
+      pt-BR:
+      ro:
+      ru:
+      sv:
+      th:
+      tr:
+      zh-CN:
     login: Login
     logout: Sair
     main_menu: Menu principal
@@ -167,13 +167,13 @@ pt-BR:
       login: Você deve estar autenticado
       wrong_username_or_password: Email ou senha incorreto(s)
     options:
-      choose_option: 
+      choose_option:
     pages:
       advanced: Avançado
       change_order: Mudar ordem
       concept: rascunho
       create_page: novo %{template}
-      delete_confirmation: Tem certeza que deseja remover a página <strong>%{subject}</strong>?
+      delete_confirmation: Tem certeza que deseja remover a página `%{subject}`?
       done_changing_order: Ordenação finalizada
       invisible_to_search_engines: Seu site não está visível para os sistemas de busca
       invisible_to_search_engines_description: Vá para as preferências para ativar os sistemas de busca
@@ -195,7 +195,7 @@ pt-BR:
       cannot_be_created: 'Imagem não pôde ser processada:'
       choose_images: Escolher imagens
       delete: Excluir
-      delete_confirmation: Tem certeza que deseja remover esta <strong>imagem</strong>?
+      delete_confirmation: Tem certeza que deseja remover esta `imagem`?
       delete_folder: Excluir pasta
       done_organizing: Concluir organização
       insert_photo: Inserir imagem
@@ -203,11 +203,11 @@ pt-BR:
       link: 'URL da sua imagem:'
       new_folder: Nova pasta
       organize: Organizar imagens
-      rename_folder: 
-      select_images: 
+      rename_folder:
+      select_images:
       upload_image: Enviar uma imagem
     preferences:
-      Analytics: 
+      Analytics:
       account: Gerais
       account_description: Preferências pessoais
       account_save: Salvar preferências
@@ -227,7 +227,7 @@ pt-BR:
       users_description: Gerenciar usuários e administradores
     preview_website: Pré-visualizar site
     resources:
-      edit: 
+      edit:
     save: Salvar
     search: Buscar...
     settings:
@@ -235,10 +235,10 @@ pt-BR:
       title: Configurações
     users:
       cannot_be_created: O usuário não pode ser salvo
-      delete_confirmation: Tem certeza que deseja remover o usuário <strong>%{user}</strong>?
+      delete_confirmation: Tem certeza que deseja remover o usuário `%{user}`?
       new: Novo usuário
       save: Salvar usuário
-    visit_page: 
+    visit_page:
     website:
       all_pages: Todas as páginas
       documents: Documentos

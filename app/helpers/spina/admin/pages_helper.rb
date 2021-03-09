@@ -25,7 +25,7 @@ module Spina
           parts.map do |part|
             current = partable.find_part(part)
             part_attributes = current_theme.parts.find{ |p| p[:name].to_s == part.to_s } || current.attributes.symbolize_keys
-            part_attributes[:title] = current.title if current
+            part_attributes[:title] = current.title if current&.title.present?
             partable.part(part_attributes)
           end
         end

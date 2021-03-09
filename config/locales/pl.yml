@@ -58,14 +58,14 @@ pl:
         skip_to_first_child_description: Ustaw jako pierwszą w kolejności
         title: Tytuł
         title_placeholder: Tytuł strony
-        url_title: 
-        url_title_description: 
-        url_title_placeholder: 
+        url_title:
+        url_title_description:
+        url_title_placeholder:
         view_template: Szablon strony
       spina/resource:
         label: Etykieta
-        order_by: 
-        parent_page: 
+        order_by:
+        parent_page:
         view_template: Domyślny szablon widoku
       spina/user:
         admin: Administrator
@@ -96,14 +96,14 @@ pl:
   spina:
     ago: temu
     attachments:
-      choose_attachment: 
+      choose_attachment:
       insert: Wstaw dokument
       insert_multiple: Wstaw dokumenty
     cancel: Anuluj
     choose_from_library: Wybierz z biblioteki
     close: Zamknij
     delete: Usuń
-    delete_confirmation: Czy na pewno chcesz usunąć  <strong>%{subject}</strong>?
+    delete_confirmation: Czy na pewno chcesz usunąć  `%{subject}`?
     edit: Edycja
     edit_website: Edytuj Witrynę
     forgot_password:
@@ -122,41 +122,41 @@ pl:
       choose_images: Wybierz obrazy
       confirm_selection: Potwierdź wybór
       delete: Usuń
-      delete_confirmation: Czy na pewno chcesz usunąć ten <strong>image</strong>?
+      delete_confirmation: Czy na pewno chcesz usunąć ten `image`?
       delete_folder: Usuń folder
-      done_organizing: 
+      done_organizing:
       insert_image: Wstaw obraz
-      insert_photo: 
-      insert_photos: 
-      link: 
-      new_folder: 
-      organize: 
-      remove_image: 
-      upload: 
-      upload_image: 
+      insert_photo:
+      insert_photos:
+      link:
+      new_folder:
+      organize:
+      remove_image:
+      upload:
+      upload_image:
     languages:
-      bg: 
-      de: 
+      bg:
+      de:
       en: Angielski
-      es: 
-      fr: 
-      id: 
-      it: 
+      es:
+      fr:
+      id:
+      it:
       nl: Niderlandzki
       pl: Polski
-      pt-BR: 
-      ro: 
-      ru: 
-      sv: 
-      th: 
-      tr: 
-      zh-CN: 
+      pt-BR:
+      ro:
+      ru:
+      sv:
+      th:
+      tr:
+      zh-CN:
     login: Login
     logout: Wyloguj
     main_menu: Główne Menu
     media_library:
       attachments: Dokumenty
-      images: 
+      images:
       photos: Obrazki
     modal:
       agree: Tak
@@ -167,13 +167,13 @@ pl:
       login: Musisz się zalogować
       wrong_username_or_password: Nieprawidłowy email lub hasło
     options:
-      choose_option: 
+      choose_option:
     pages:
       advanced: Zaawansowane
       change_order: Zmień kolejność
       concept: Szkic
       create_page: Nowa wg szablonu %{template}
-      delete_confirmation: Czy na pewno usunąć stronę <strong>%{subject}</strong>?
+      delete_confirmation: Czy na pewno usunąć stronę `%{subject}`?
       done_changing_order: Gotowe
       invisible_to_search_engines: Witryna jest niewidoczna dla wyszukiwarek
       invisible_to_search_engines_description: Przejdź do preferencji aby zmienić widoczność dla wyszukiwarek.
@@ -194,8 +194,8 @@ pl:
     photos:
       cannot_be_created: 'Obrazek nie mógł być przetworzony:'
       choose_images: Wybierz obrazek
-      delete: 
-      delete_confirmation: Czy na pewno usunąć ten <strong>obrazek</strong>?
+      delete:
+      delete_confirmation: Czy na pewno usunąć ten `obrazek`?
       delete_folder: Usuń folder
       done_organizing: Gotowe
       insert_photo: Wstaw obrazek
@@ -203,11 +203,11 @@ pl:
       link: 'URL obrazka:'
       new_folder: Nowy folder
       organize: Uporządkuj obrazki
-      rename_folder: 
-      select_images: 
+      rename_folder:
+      select_images:
       upload_image: Wgraj obrazek
     preferences:
-      Analytics: 
+      Analytics:
       account: Ogólne
       account_description: Preferencje osobiste
       account_save: Zapisz preferencje
@@ -227,7 +227,7 @@ pl:
       users_description: Zarządzaj użytkownikami i administratorami
     preview_website: Pogląd
     resources:
-      edit: 
+      edit:
     save: Zapisz
     search: Szukaj...
     settings:
@@ -235,14 +235,14 @@ pl:
       title: Ustawienia
     users:
       cannot_be_created: Nie można usunąć użytkownika
-      delete_confirmation: Czy na pewno usunąć użytkownika <strong>%{user}</strong>?
+      delete_confirmation: Czy na pewno usunąć użytkownika `%{user}`?
       new: Nowy Użytkownik
       save: Zapisz użytkownika
-    visit_page: 
+    visit_page:
     website:
       all_pages: Wszystkie strony
       documents: Dokumenty
-      images: 
+      images:
       media_library: Biblioteka mediów
       media_library_description: Znajdziesz tu wszystkie obrazki i dokumenty
       pages: Strony

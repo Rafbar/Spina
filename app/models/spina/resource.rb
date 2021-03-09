@@ -14,6 +14,12 @@ module Spina
         super.order(created_at: :desc)
       end
     end
-    
+
+    def is_allowed?(action)
+      locks = config['locks']
+      return true if locks.blank?
+
+      !locks.include?(action.to_s)
+    end
   end
 end

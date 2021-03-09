@@ -12,7 +12,9 @@ module Spina
       end
 
       def new
-        @resource = Resource.find_by(id: params[:resource_id])
+        @resource = Resource.find_by(id: params[:resource_id]) if params[:resource_id].present?
+        return unless @resource&.is_allowed?(:create_pages)
+
         @page = Page.new(resource: @resource, parent: Page.find_by(id: params[:parent_id]))
         add_index_breadcrumb
         if current_theme.new_page_templates.any? { |template| template[0] == params[:view_template] }
@@ -24,16 +26,19 @@ module Spina
 
       def create
         @page = Page.new(page_params)
-        add_breadcrumb I18n.t('spina.pages.new')
+        return unless @page.resource&.is_allowed?(:create_pages)
+
         if @page.save
           @page.navigations << Spina::Navigation.where(auto_add_pages: true)
           redirect_to spina.edit_admin_page_url(@page), flash: {success: t('spina.pages.saved')}
         else
+          add_index_breadcrumb
+          add_breadcrumb I18n.t('spina.pages.new')
           render :new, layout: 'spina/admin/admin'
         end
       end
 
-      def edit        
+      def edit
         add_index_breadcrumb
         add_breadcrumb @page.title
         render layout: 'spina/admin/admin'
@@ -44,7 +49,7 @@ module Spina
           Mobility.locale = @locale
           if @page.update(page_params)
             @page.touch
-            format.html { redirect_to spina.edit_admin_page_url(@page, params: {locale: @locale}), flash: {success: t('spina.pages.saved')} }
+            format.html { redirect_to spina.edit_admin_page_url(@page, params: { locale: @locale }), flash: {success: t('spina.pages.saved')} }
             format.js
           else
             format.html do
@@ -68,7 +73,7 @@ module Spina
         render layout: false
       end
 
-      def destroy        
+      def destroy
         @page.destroy
         redirect_to spina.admin_pages_url
       end

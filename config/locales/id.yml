@@ -9,10 +9,10 @@ id:
         google_analytics: Google Analytics
         google_plus: Google+
         google_site_verification: Verifikasi Google Site
-        instagram: 
+        instagram:
         kvk_identifier: Kamar dagang
         kvk_identifier_description: Kamar dagang
-        linkedin: 
+        linkedin:
         logo: Logo
         name: Nama Website
         phone: Telepon
@@ -22,7 +22,7 @@ id:
         twitter: Twitter
         vat_identifier: VAT
         vat_identifier_description: VAT
-        youtube: 
+        youtube:
       spina/attachment:
         created_at: Dibuat pada
         name: Nama berkas
@@ -37,7 +37,7 @@ id:
         pages_description: Pilih halaman yang ingin anda gunakan pada navigasi
       spina/page:
         ancestry: Halaman induk
-        created_at: 
+        created_at:
         description: Deskripsi meta
         description_description: Deskripsi ini akan tampil di hasil pencarian
         description_placeholder: Deskripsi pendek dari halaman anda
@@ -49,7 +49,7 @@ id:
         menu_title: Judul Navigasi
         menu_title_placeholder: Kosongkan untuk menggunakan judul halaman
         no_parent: Tidak ada induk
-        resource: 
+        resource:
         seo_title: SEO <title>
         seo_title_placeholder: Judul ini digunakan di tag-<title>
         show_in_menu: Tampilkan di navigasi
@@ -58,15 +58,15 @@ id:
         skip_to_first_child_description: Maju ke halaman anak pertama
         title: Judul
         title_placeholder: Judul halaman
-        url_title: 
-        url_title_description: 
-        url_title_placeholder: 
+        url_title:
+        url_title_description:
+        url_title_placeholder:
         view_template: Template halaman
       spina/resource:
-        label: 
-        order_by: 
-        parent_page: 
-        view_template: 
+        label:
+        order_by:
+        parent_page:
+        view_template:
       spina/user:
         admin: Administrator
         admin_description: Administrator dapat membuat pengguna
@@ -96,14 +96,14 @@ id:
   spina:
     ago: lalu
     attachments:
-      choose_attachment: 
+      choose_attachment:
       insert: Masukan dokumen
       insert_multiple: Masukan dokumen
     cancel: Batal
     choose_from_library: Pilih dari pustaka
     close: Tutup
     delete: Hapus
-    delete_confirmation: Apakah Anda yakin ingin menghapus <strong>%{subject}</strong>?
+    delete_confirmation: Apakah Anda yakin ingin menghapus `%{subject}`?
     edit: Ubah
     edit_website: Mengubah website
     forgot_password:
@@ -115,48 +115,48 @@ id:
       success: Anda dapat menggunakan sandi baru anda
       unknown_user: Pengguna ini tidak ada
     images:
-      all_images: 
-      back: 
-      cannot_be_created: 
-      choose_image: 
-      choose_images: 
-      confirm_selection: 
-      delete: 
-      delete_confirmation: 
-      delete_folder: 
-      done_organizing: 
-      insert_image: 
-      insert_photo: 
-      insert_photos: 
-      link: 
-      new_folder: 
-      organize: 
-      remove_image: 
-      upload: 
-      upload_image: 
+      all_images:
+      back:
+      cannot_be_created:
+      choose_image:
+      choose_images:
+      confirm_selection:
+      delete:
+      delete_confirmation:
+      delete_folder:
+      done_organizing:
+      insert_image:
+      insert_photo:
+      insert_photos:
+      link:
+      new_folder:
+      organize:
+      remove_image:
+      upload:
+      upload_image:
     languages:
-      bg: 
-      de: 
+      bg:
+      de:
       en: Inggris
-      es: 
-      fr: 
+      es:
+      fr:
       id: Indonesia
-      it: 
+      it:
       nl: Belanda
-      pl: 
-      pt-BR: 
-      ro: 
-      ru: 
-      sv: 
-      th: 
-      tr: 
-      zh-CN: 
+      pl:
+      pt-BR:
+      ro:
+      ru:
+      sv:
+      th:
+      tr:
+      zh-CN:
     login: Login
     logout: Keluar
     main_menu: Menu utama
     media_library:
       attachments: Dokumen
-      images: 
+      images:
       photos: Gambar
     modal:
       agree: Ya, saya yakin
@@ -167,13 +167,13 @@ id:
       login: Anda harus login dahulu
       wrong_username_or_password: Salah e-mail atau sandi
     options:
-      choose_option: 
+      choose_option:
     pages:
       advanced: Lanjutan
       change_order: Ubah urutan
       concept: Konsep
       create_page: Baru %{template}
-      delete_confirmation: Apakah anda yakin ingin menghapus halaman <strong>%{subject}</strong>?
+      delete_confirmation: Apakah anda yakin ingin menghapus halaman `%{subject}`?
       done_changing_order: Selesai mengurutkan
       invisible_to_search_engines: Website anda tak terlihat di mesin pencarian
       invisible_to_search_engines_description: Pergi ke preferensi anda untuk mengaktifkan mesin pencari.
@@ -194,8 +194,8 @@ id:
     photos:
       cannot_be_created: 'Gambar tidak dapat diproses:'
       choose_images: Pilih gambar
-      delete: 
-      delete_confirmation: Apakah anda yakin ingin menghapus <strong>gambar</strong> ini?
+      delete:
+      delete_confirmation: Apakah anda yakin ingin menghapus `gambar` ini?
       delete_folder: Hapus direktori
       done_organizing: Selesai mengatur
       insert_photo: Masukkan gambar
@@ -203,11 +203,11 @@ id:
       link: 'URL gambar Anda:'
       new_folder: Direktori baru
       organize: Mengatur gambar
-      rename_folder: 
-      select_images: 
+      rename_folder:
+      select_images:
       upload_image: Unggah gambar
     preferences:
-      Analytics: 
+      Analytics:
       account: Umum
       account_description: Preferensi personal
       account_save: Simpan preferensi
@@ -227,7 +227,7 @@ id:
       users_description: Manajemen penggunda dan administrator
     preview_website: Website sebelumnya
     resources:
-      edit: 
+      edit:
     save: Simpan
     search: Pencarian...
     settings:
@@ -235,14 +235,14 @@ id:
       title: Pengaturan
     users:
       cannot_be_created: Pengguna tidak dapat disimpan
-      delete_confirmation: Apakah anda ingin menghapus pengguna <strong>%{user}</strong>?
+      delete_confirmation: Apakah anda ingin menghapus pengguna `%{user}`?
       new: Pengguna baru
       save: Simpan pengguna
-    visit_page: 
+    visit_page:
     website:
       all_pages: Semua halaman
       documents: Dokumen
-      images: 
+      images:
       media_library: Perpustakaan media
       media_library_description: Di sini anda akan menemukan semua gambar dan dokumen anda
       pages: Halaman

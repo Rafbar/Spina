@@ -3,12 +3,13 @@ module Spina
     class ResourcesController < AdminController
       before_action :set_locale
       before_action :set_resource, only: [:show, :edit, :update]
+      before_action :check_resource, only: [:edit, :update]
 
-      def show        
+      def show
         add_breadcrumb @resource.label
       end
 
-      def edit        
+      def edit
         add_breadcrumb @resource.label, spina.admin_resource_path(@resource)
         add_breadcrumb t('spina.edit')
       end
@@ -23,18 +24,21 @@ module Spina
 
       private
 
-        def resource_params
-          params.require(:resource).permit(:label, :slug, :view_template, :order_by, :parent_page_id)
-        end
+      def resource_params
+        params.require(:resource).permit(:label, :slug, :view_template, :order_by, :parent_page_id)
+      end
 
-        def set_resource
-          @resource = Resource.find(params[:id])          
-        end
+      def set_resource
+        @resource = Resource.find(params[:id])
+      end
 
-        def set_locale
-          @locale = params[:locale] || I18n.default_locale
-        end
+      def set_locale
+        @locale = params[:locale] || I18n.default_locale
+      end
 
+      def check_resource
+        redirect_to url_for(action: :show) unless @resource.is_allowed?(:edit)
+      end
     end
   end
 end
