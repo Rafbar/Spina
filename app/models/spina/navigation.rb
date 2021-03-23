@@ -9,7 +9,7 @@ module Spina
     validates :name, uniqueness: true
 
     def cache_key
-      super + "_" + Mobility.locale.to_s
+      super + "_" + Mobility.locale.to_s + "_" + updated_at.to_s
     end
   end
 end

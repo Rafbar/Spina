@@ -83,7 +83,7 @@ module Spina
     end
 
     def cache_key
-      super + "_" + Mobility.locale.to_s
+      super + "_" + Mobility.locale.to_s + "_" + updated_at.to_s
     end
 
     def view_template_config(theme)
