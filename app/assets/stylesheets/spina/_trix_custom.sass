@@ -92,65 +92,32 @@ trix-toolbar
     border-top-color: $primary-color
     border-radius: 3px
 
-trix-editor
+trix-editor.trix-content
   line-height: 18px
   min-height: 100px
   margin-top: 15px
 
-  h1, h2, h3, h4, h5, h6
-    padding-left: 24px
-    position: relative
-    z-index: 1
 
-    &:after
-      color: #ccc
-      content: "H1"
-      font-size: 12px
-      font-weight: bold
-      left: 0px
-      line-height: inherit
-      position: absolute
-      top: 0px
 
-  h1, h2, h3, h4, h5, h6
-    font-size: 24px
-    font-weight: 600
-    line-height: 38px
 
-  h2
-    font-size: 22px
-    line-height: 34px
-
-  h3
-    font-size: 20px
-    line-height: 30px
-
-  h4
-    font-size: 18px
-    line-height: 26px
-
-  h5
-    font-size: 16px
-    line-height: 22px
-
-  h6
-    font-size: 14px
-    line-height: 18px
-
-  h2:after
-    content: "H2"
-
-  h3:after
-    content: "H3"
-
-  h4:after
-    content: "H4"
-
-  h5:after
-    content: "H5"
-
-  h6:after
-    content: "H6"
+  @each $tag, $size in ((h1, 24px), (h2, 22px), (h3 20px), (h4, 18px), (h5, 16px), (h6, 14px))
+    #{$tag}
+      padding-left: 24px
+      position: relative
+      z-index: 1
+      font-size: $size
+      font-weight: 600
+      line-height: 1.6
+      &::before
+        content: "#{$tag}"
+        position: absolute
+        left: 0
+        top: 0
+        color: #ccc
+        font-size: 12px
+        font-weight: bold
+        text-transform: uppercase
+        line-height: 1.6 * $size
 
   a
     text-decoration: underline

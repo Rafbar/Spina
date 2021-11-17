@@ -22,12 +22,12 @@
           this.imageIdInput.value = event.currentTarget.value
           this.signedBlobIdInput.value = event.currentTarget.dataset.signedBlobId
           this.filenameInput.value = event.currentTarget.dataset.filename
-          this.placeholder.innerHTML = `<img src="${event.currentTarget.dataset.thumbnailUrl}" width="200" height="150" />`
+          this.placeholder.innerHTML = `<img src="${event.currentTarget.dataset.imageUrl}" width="200" height="150" />`
           this.element.modal.close()
           break
         case "multiple":
           if(event.currentTarget.checked) {
-            this.addImage(event.currentTarget.dataset.imageId, event.currentTarget.dataset.signedBlobId, event.currentTarget.dataset.filename, event.currentTarget.dataset.thumbnailUrl)
+            this.addImage(event.currentTarget.dataset.imageId, event.currentTarget.dataset.signedBlobId, event.currentTarget.dataset.filename, event.currentTarget.dataset.imageUrl)
           } else {
             this.removeImage(event.currentTarget.dataset.imageId)
           }

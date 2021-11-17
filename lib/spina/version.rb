@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module Spina
-  VERSION = '2.0.0.ws7'
+  VERSION = '2.1.0.ws'
 end

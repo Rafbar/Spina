@@ -15,18 +15,11 @@ module Spina
   class Engine < ::Rails::Engine
     isolate_namespace Spina
 
-    config.autoload_paths += %W( #{config.root}/lib )
+    config.autoload_paths.push("#{config.root}/lib")
 
     config.to_prepare do
       # Load helpers from main application
       Spina::ApplicationController.helper Rails.application.helpers
-
-      unless Spina.config.disable_decorator_load
-        # Require decorators from main application
-        Dir[Rails.root.join('app', 'decorators', '**', '*_decorator.rb')].flatten.uniq.each do |decorator|
-          require_dependency(decorator)
-        end
-      end
 
       # Register JSON part types for editing content
       Spina::Part.register(
