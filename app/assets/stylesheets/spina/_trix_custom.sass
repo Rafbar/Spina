@@ -1,92 +1,12 @@
 trix-toolbar
   position: sticky
   z-index: 2
+  background: $bg-color
 
-  .trix-button-group
-    border: 0
-    margin-bottom: 0
-
-    &:not(:first-child)
-      margin-left: 10px
-
-  .trix-button
-    @extend .button
-    border-bottom: 0
-    border-radius: 0
-    margin: 0
-
-    &:disabled
-      color: rgba(0, 0, 0, .6)
-
-    &:not(:first-child)
-      border-left: 0
-
-    &:first-child
-      border-top-left-radius: 3px
-      border-bottom-left-radius: 3px
-
-    &:last-child
-      border-top-right-radius: 3px
-      border-bottom-right-radius: 3px
-
-    &.trix-active
-      background: $primary-color
-      color: #fff
-
-  .trix-button--text
-    padding-left: 12px
-    padding-right: 12px
-
-  .trix-button--icon
-    padding: 18px 16px
-
-    &::before
-      background: none
-      font-family: $icon-font
-      display: inline-block
-      font-weight: 900
-      line-height: 36px
-      opacity: 1
-      text-indent: 0
-
-    &.trix-button--icon-bold
-      @extend .icon-bold
-
-    &.trix-button--icon-italic
-      @extend .icon-italic
-
-    &.trix-button--icon-strike
-      @extend .icon-strikethrough
-
-    &.trix-button--icon-link
-      @extend .icon-link
-
-    &.trix-button--icon-image
-      @extend .icon-image
-
-    &.trix-button--icon-quote
-      @extend .icon-quote-right
-
-    &.trix-button--icon-code
-      @extend .icon-code
-
-    &.trix-button--icon-bullet-list
-      @extend .icon-list
-
-    &.trix-button--icon-number-list
-      @extend .icon-list-ol
-
-    &.trix-button--icon-decrease-nesting-level
-      @extend .icon-outdent
-
-    &.trix-button--icon-increase-nesting-level
-      @extend .icon-indent
-
-    &.trix-button--icon-undo
-      @extend .icon-undo
-
-    &.trix-button--icon-redo
-      @extend .icon-redo
+  .trix-button--icon-image
+    text-indent: 0
+    &:before
+      display: none
 
   .trix-dialog
     border-top-color: $primary-color
@@ -96,9 +16,6 @@ trix-editor.trix-content
   line-height: 18px
   min-height: 100px
   margin-top: 15px
-
-
-
 
   @each $tag, $size in ((h1, 24px), (h2, 22px), (h3 20px), (h4, 18px), (h5, 16px), (h6, 14px))
     #{$tag}
@@ -185,7 +102,3 @@ trix-editor.trix-content
 
     &.attachment img
       box-shadow: 0 0 15px rgba(0, 0, 0, .15)
-
-  .trix-button--remove
-    border: none
-    box-shadow: 0 0 5px rgba(0, 0, 0, .15)

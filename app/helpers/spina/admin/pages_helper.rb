@@ -1,7 +1,6 @@
 module Spina
   module Admin
     module PagesHelper
-
       def link_to_add_repeater_fields(f)
         repeater_content = Spina::Parts::RepeaterContent.new(name: f.object.name, title: f.object.title)
         fields = f.fields_for(:content, [repeater_content], child_index: repeater_content.object_id) do |builder|

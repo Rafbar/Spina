@@ -5,7 +5,7 @@
         = icon_spina('pencil')
         = t('spina.resources.edit')
   - if @resource.is_allowed?(:create_pages)
-    = link_to spina.new_admin_page_path(params: {resource_id: @resource.id, view_template: @resource.view_template.presence || 'show'}), class: 'button button-primary icon-only', style: 'margin-right: 0' do
+    = link_to spina.new_admin_page_path(params: {resource_id: @resource.id, view_template: @resource.view_template.presence || 'show'}), class: 'button button-primary', style: 'margin-right: 0' do
       = icon_spina('plus')
       = t('spina.pages.new')
 
