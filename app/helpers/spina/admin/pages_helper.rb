@@ -63,6 +63,10 @@ module Spina
       def option_label(part, value)
         t(['options',part.name,value].compact.join('.'))
       end
+
+      def root_page?(page)
+        page && page.ancestry.nil?
+      end
     end
   end
 end

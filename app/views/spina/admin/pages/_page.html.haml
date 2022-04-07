@@ -1,4 +1,4 @@
-= link_to spina.edit_admin_page_path(page), class: 'button button-link button-small sortable-link' do
+= link_to root_page?(page) ? "#" : spina.edit_admin_page_path(page), class: "button button-link button-small sortable-link#{' root-page' if root_page?(page)}" do
   = page.menu_title
 
   - if page.draft?
@@ -9,8 +9,9 @@
   - if page.skip_to_first_child
     %small (#{raw t('spina.pages.skip_to_first_child')})
 
-%span.pull-right
-  = link_to spina.edit_admin_page_path(page), class: 'button button-small button-default dd-nodrag' do
-    .button-content
-      = icon_spina('edit')
-      = t('spina.edit')
+- unless root_page?(page)
+  %span.pull-right
+    = link_to spina.edit_admin_page_path(page), class: 'button button-small button-default dd-nodrag' do
+      .button-content
+        = icon_spina('edit')
+        = t('spina.edit')
