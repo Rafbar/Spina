@@ -65,7 +65,7 @@ module Spina
       end
 
       def root_page?(page)
-        page && page.ancestry.nil?
+        page && page.attributes['slug'].nil? && page.ancestry.nil?
       end
     end
   end
